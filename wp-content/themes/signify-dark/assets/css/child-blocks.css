@@ -35,22 +35,22 @@ figure.wp-block-table.is-style-stripes tbody tr:nth-child(2n+1) {
 /* Page Post Content Link Color */
 .singular-content-wrap .entry-content a:not(.more-link):not(.button):not(button):not(.wp-block-button__link):not(.wp-playlist-caption),
 .singular-content-wrap .entry-summary a:not(.more-link):not(.button):not(button):not(.wp-block-button__link):not(.wp-playlist-caption) {
-    color: #db4f3d;
+    color: #149414;
 }
 
 /* Button Background Color */
 .wp-block-button__link {
-    background-color: #db4f3d;
+    background-color: #149414;
 }
 
 .is-style-outline.wp-block-button .wp-block-button__link {
-    border-color: #db4f3d;
+    border-color: #149414;
 }
 
 /* Button Hover Text Color */
 .is-style-outline.wp-block-button .wp-block-button__link:hover,
 .is-style-outline.wp-block-button .wp-block-button__link:focus {
-    color: #db4f3d;
+    color: #149414;
 }
 
 /* Button Hover Background Color */

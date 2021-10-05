@@ -324,7 +324,7 @@ span.breadcrumb a:focus,
 /* Page Post Content Link Color */
 .singular-content-wrap .entry-content a:not(.more-link):not(.button):not(button):not(.wp-block-button__link):not(.wp-playlist-caption),
 .singular-content-wrap .entry-summary a:not(.more-link):not(.button):not(button):not(.wp-block-button__link):not(.wp-playlist-caption) {
-    color: #db4f3d;
+    color: #149414;
 }
 
 /* Link Hover Color */
@@ -379,7 +379,7 @@ button.menu-toggle:focus .menu-label,
 #sticky-playlist-section .wp-playlist-playing .wp-playlist-item-length,
 #sticky-playlist-section .wp-playlist-item:hover .wp-playlist-item-length,
 #sticky-playlist-section .wp-playlist-item:focus .wp-playlist-item-length {
-    color: #db4f3d;
+    color: #149414;
 }
 
 .site-title a:hover,
@@ -553,32 +553,32 @@ ul.page-numbers .page-numbers:focus,
 #stats-section .entry-title a,
 #featured-content-section .entry-header .entry-meta > span a,
 .product .woocommerce-Price-amount {
-    color: #db4f3d;
+    color: #149414;
 }
 
 #signify-logo-slider-section .owl-dots .owl-dot:hover,
 #signify-logo-slider-section .owl-dots .owl-dot:focus {
-    background-color: #db4f3d;
+    background-color: #149414;
 }
 
 #stats-section .entry-title a,
 #featured-content-section .entry-header .entry-meta>span a,
 .product .woocommerce-Price-amount {
-    color: #db4f3d;
+    color: #149414;
 }
 
 @media only screen and (min-width: 75em) {
 
     .navigation-classic .menu-inside-wrapper .main-navigation>.nav-menu>.current_page_item>a:before,
     .navigation-classic .menu-inside-wrapper .top-navigation>.nav-menu>.current_page_item>a:before {
-        border-color: #db4f3d;
+        border-color: #149414;
     }
 }
 
 #signify-logo-slider-section .owl-dots .owl-dot.active,
 #feature-slider-section .owl-dots button.owl-dot.active span,
 .owl-carousel .owl-dots button.owl-dot.active span {
-    border-color: #db4f3d;
+    border-color: #149414;
 }
 
 /* Secondary Link Color */
@@ -645,7 +645,7 @@ optgroup,
 }
 
 #content.site-content .wrapper #primary.content-area #main.site-main .hentry .entry-content #rpt_pricr.rpt_style_basic .rpt_plan.rpt_recommended_plan .rpt_foot {
-    background-color: #db4f3d !important;
+    background-color: #149414 !important;
 }
 
 /* Button Background Color */
@@ -722,7 +722,7 @@ nav.navigation.posts-navigation .nav-links a,
 #portfolio-content-section .hentry .more-link:focus,
 .timeline-section .content-wrapper:before,
 .timeline-section .hentry .hentry-inner:before {
-    background-color: #db4f3d;
+    background-color: #149414;
 }
 
 .woocommerce .products .product-container:not(.entry-container) .button,
@@ -802,14 +802,14 @@ nav.navigation.posts-navigation .nav-links a,
 .color-scheme-music .site-content .archive-posts-wrapper .posts-navigation .nav-links > div a:hover,
 .color-scheme-music .site-content .archive-posts-wrapper .posts-navigation .nav-links > div a:focus,
 .is-style-outline.wp-block-button .wp-block-button__link {
-    border-color: #db4f3d;
+    border-color: #149414;
 }
 
 .stats-section .entry-summary .more-link:hover,
 .stats-section .entry-summary .more-link:focus,
 .stats-section .entry-content .more-link:hover,
 .stats-section .entry-content .more-link:focus {
-    color: #db4f3d;
+    color: #149414;
 }
 
 /* Button Text Color */
