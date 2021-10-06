@@ -8,8 +8,8 @@
 	>
 
 <channel>
-	<title>spurge &#8211; M. Ștefan Cristian</title>
-	<atom:link href="/author/spurge/feed/" rel="self" type="application/rss+xml" />
+	<title>#hack &#8211; M. Ștefan Cristian</title>
+	<atom:link href="/tag/hack/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description>Technology &#38; Information Security Enthusiast</description>
 	<lastBuildDate>Wed, 06 Oct 2021 20:47:11 +0000</lastBuildDate>
@@ -22,7 +22,7 @@
 
 <image>
 	<url>/wp-content/uploads/2021/10/icon.png</url>
-	<title>spurge &#8211; M. Ștefan Cristian</title>
+	<title>#hack &#8211; M. Ștefan Cristian</title>
 	<link></link>
 	<width>32</width>
 	<height>32</height>
@@ -70,27 +70,6 @@
 
 
 <p>The above PDF and video demo can be found <a href="https://drive.google.com/drive/folders/1svT-g4Nj4H5FY8-KSorNLEh5p0738txr" data-type="URL" data-id="https://drive.google.com/drive/folders/1svT-g4Nj4H5FY8-KSorNLEh5p0738txr" target="_blank" rel="noreferrer noopener">here</a>. </p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Recent history the world deserves to know</title>
-		<link>/2021/10/03/hello-world/</link>
-		
-		<dc:creator><![CDATA[spurge]]></dc:creator>
-		<pubDate>Sun, 03 Oct 2021 16:27:40 +0000</pubDate>
-				<category><![CDATA[Information security]]></category>
-		<guid isPermaLink="false">/?p=1</guid>
-
-					<description><![CDATA[The book &#8220;This Is How They Tell Me the World Ends&#8221; by Nicole Perlroth contains valuable information about all the<p><a href="/2021/10/03/hello-world/" class="more-link">Continue reading<span class="screen-reader-text">Recent history the world deserves to know</span></a></p>]]></description>
-										<content:encoded><![CDATA[
-<p>The book &#8220;<em><strong>This Is How They Tell Me the World Ends</strong></em>&#8221; by <strong>Nicole Perlroth</strong> contains valuable information about all the important events in the world of cyber warfare internationally.</p>
-
-
-
-<figure class="wp-block-image size-large"><img loading="lazy" width="674" height="1024" src="/wp-content/uploads/2021/10/91YHYvJdgxL-674x1024.jpg" alt="" class="wp-image-80" srcset="/wp-content/uploads/2021/10/91YHYvJdgxL-674x1024.jpg 674w, /wp-content/uploads/2021/10/91YHYvJdgxL-197x300.jpg 197w, /wp-content/uploads/2021/10/91YHYvJdgxL-768x1168.jpg 768w, /wp-content/uploads/2021/10/91YHYvJdgxL-1010x1536.jpg 1010w, /wp-content/uploads/2021/10/91YHYvJdgxL-1347x2048.jpg 1347w, /wp-content/uploads/2021/10/91YHYvJdgxL.jpg 1684w" sizes="(max-width: 674px) 100vw, 674px" /><figcaption>https://www.amazon.com/This-They-Tell-World-Ends/dp/1635576059</figcaption></figure>
 ]]></content:encoded>
 					
 		

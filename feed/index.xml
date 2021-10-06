@@ -12,7 +12,7 @@
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description>Technology &#38; Information Security Enthusiast</description>
-	<lastBuildDate>Sun, 03 Oct 2021 20:17:55 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 06 Oct 2021 20:47:11 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,54 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>SQL Injections showcase</title>
+		<link>/2021/10/06/sql-injections-showcase/</link>
+		
+		<dc:creator><![CDATA[spurge]]></dc:creator>
+		<pubDate>Wed, 06 Oct 2021 20:43:49 +0000</pubDate>
+				<category><![CDATA[Information security]]></category>
+		<category><![CDATA[#badstore]]></category>
+		<category><![CDATA[#cybersecurity]]></category>
+		<category><![CDATA[#hack]]></category>
+		<category><![CDATA[#loginbypass]]></category>
+		<category><![CDATA[#SQLinjection]]></category>
+		<category><![CDATA[#webvulnerability]]></category>
+		<category><![CDATA[vulnerability]]></category>
+		<guid isPermaLink="false">/?p=137</guid>
+
+					<description><![CDATA[This is my winning solution for a faculty SQL Injection contest I participated in 2021. The main challenge was to<p><a href="/2021/10/06/sql-injections-showcase/" class="more-link">Continue reading<span class="screen-reader-text">SQL Injections showcase</span></a></p>]]></description>
+										<content:encoded><![CDATA[
+<p>This is my winning solution for a faculty <span style="color:#149414" class="has-inline-color"><em>SQL Injection</em> contest</span> I participated in 2021.</p>
+
+
+
+<p>The main challenge was to find <em>inventive and playful</em> ways to <span style="color:#149414" class="has-inline-color">exploit</span> database connected applications that are <span style="color:#149414" class="has-inline-color">vulnerable</span> to this kind of attack. </p>
+
+
+
+<p>Therefore, I used two applications: <a rel="noreferrer noopener" href="https://github.com/StefanCsPurge/Web-Programming/tree/main/9%20SHCarsWebsite_-_Angular_ASP_NET_API" data-type="URL" data-id="https://github.com/StefanCsPurge/Web-Programming/tree/main/9%20SHCarsWebsite_-_Angular_ASP_NET_API" target="_blank">one that was entirely coded by me</a>, and the other being a vulnerable webservice hosted on a Linux server. It was fun <span style="color:#149414" class="has-inline-color">( ͡° ͜ʖ ͡°)</span> .</p>
+
+
+
+<p>Below is the complete description of the exploitation process / write-up.</p>
+
+
+<a href="/wp-content/uploads/2021/10/completeDescriptionSQLInj.pdf" class="pdfemb-viewer" style="" data-width="max" data-height="max"  data-toolbar="bottom" data-toolbar-fixed="on">completeDescriptionSQLInj<br/></a>
+<p class="wp-block-pdfemb-pdf-embedder-viewer"></p>
+
+
+
+<p>The Github repo for this solution can be found <a href="https://github.com/StefanCsPurge/Databases/tree/main/SQL%20Injections%20showcase" data-type="URL" data-id="https://github.com/StefanCsPurge/Databases/tree/main/SQL%20Injections%20showcase" target="_blank" rel="noreferrer noopener">here</a>.</p>
+
+
+
+<p>The above PDF and video demo can be found <a href="https://drive.google.com/drive/folders/1svT-g4Nj4H5FY8-KSorNLEh5p0738txr" data-type="URL" data-id="https://drive.google.com/drive/folders/1svT-g4Nj4H5FY8-KSorNLEh5p0738txr" target="_blank" rel="noreferrer noopener">here</a>. </p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Recent history the world deserves to know</title>
 		<link>/2021/10/03/hello-world/</link>
 		
