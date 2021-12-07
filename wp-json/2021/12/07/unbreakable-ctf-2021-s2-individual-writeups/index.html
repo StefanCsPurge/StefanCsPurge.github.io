@@ -5,13 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
-<title>M. Ștefan Cristian &#8211; Technology &amp; Information Security Enthusiast</title>
+<title>UNbreakable CTF 2021 S2 (individual) Writeups &#8211; M. Ștefan Cristian</title>
 <meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//s.w.org">
 <link rel="alternate" type="application/rss+xml" title="M. Ștefan Cristian &raquo; Feed" href="/feed/">
 <link rel="alternate" type="application/rss+xml" title="M. Ștefan Cristian &raquo; Comments Feed" href="/comments/feed/">
-<link rel="alternate" type="application/rss+xml" title="M. Ștefan Cristian &raquo; My journey Comments Feed" href="/sample-page/feed/">
 		<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/localhost\/wordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};
 			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -42,21 +41,15 @@ img.emoji {
 <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
 <script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <link rel="https://api.w.org/" href="/wp-json/">
-<link rel="alternate" type="application/json" href="/wp-json/wp/v2/pages/2">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/255">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml"> 
 <meta name="generator" content="WordPress 5.8.2">
-<link rel="canonical" href="/">
-<link rel="shortlink" href="/">
-<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%2Fwordpress%2F">
-<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%2Fwordpress%2F&#038;format=xml">
-<link rel="pingback" href="/xmlrpc.php">	        <style type="text/css" rel="header-image">.custom-header .wrapper:before {
-	                background-image: url( /wp-content/uploads/2021/10/cropped-adrianna-geo-1rBg5YSi00c-unsplash-scaled-1.jpg);
-					background-position: center center;
-					background-repeat: no-repeat;
-					background-size: cover;
-	            }</style>
-	    		<style type="text/css">.site-title a,
+<link rel="canonical" href="/2021/12/07/unbreakable-ctf-2021-s2-individual-writeups/">
+<link rel="shortlink" href="/?p=255">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%2Fwordpress%2F2021%2F12%2F07%2Funbreakable-ctf-2021-s2-individual-writeups%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%2Fwordpress%2F2021%2F12%2F07%2Funbreakable-ctf-2021-s2-individual-writeups%2F&#038;format=xml">
+		<style type="text/css">.site-title a,
 			.site-description {
 				color: #b7b7b7;
 			}</style>
@@ -66,7 +59,7 @@ img.emoji {
 <meta name="msapplication-TileImage" content="http://localhost/wordpress/wp-content/uploads/2021/10/icon.png">
 </head>
 
-<body class="home page-template-default page page-id-2 wp-embed-responsive page-template-front-page fluid-layout navigation-classic no-sidebar full-width-layout excerpt header-media-fluid has-header-media absolute-header has-header-image color-scheme-dark menu-type-classic menu-style-full-width header-style-one">
+<body class="post-template-default single single-post postid-255 single-format-standard wp-embed-responsive fluid-layout navigation-classic no-sidebar full-width-layout excerpt header-media-fluid header-media-text-disabled has-header-image color-scheme-dark menu-type-classic menu-style-full-width header-style-one">
 
 
 <div id="page" class="site">
@@ -97,9 +90,9 @@ img.emoji {
 				<nav id="site-navigation" class="main-navigation default-page-menu" role="navigation" aria-label="Primary Menu">
 
 									<ul id="primary-menu" class="menu nav-menu">
-<li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-19"><a href="/" aria-current="page">Home</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-19"><a href="/">Home</a></li>
 <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="/about/">About</a></li>
-<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="/blog/">Blog</a></li>
+<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-21"><a href="/blog/">Blog</a></li>
 <li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-252"><a href="/recommendations/">Recommendations</a></li>
 <li id="menu-item-96" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96"><a href="/cybersecurity-info">Cybersecurity intro</a></li>
 </ul>				
@@ -119,26 +112,6 @@ img.emoji {
 	</header><!-- #masthead -->
 
 	
-<div class="custom-header header-media">
-	<div class="wrapper">
-				<div class="custom-header-media">
-			<div id="wp-custom-header" class="wp-custom-header"><img src="/wp-content/uploads/2021/10/cropped-adrianna-geo-1rBg5YSi00c-unsplash-scaled-1.jpg"></div>	
-					<div class="custom-header-content sections header-media-section content-align-left text-align-left">
-			<div class="custom-header-content-wrapper">
-				<div class="section-title-wrapper"><h2 class="section-title">art &amp; curiosity</h2></div>				<div class="site-header-text"><p></p></div>
-				
-												<a href="https://youtu.be/qE0UimODxNg" target="_blank" class="more-link">✓<span class="screen-reader-text">✓</span></a>
-												</div>
-<!-- .custom-header-content-wrapper -->
-		</div>
-<!-- .custom-header-content -->
-				</div>
-			</div>
-<!-- .wrapper -->
-	<div class="custom-header-overlay"></div>
-<!-- .custom-header-overlay -->
-</div>
-<!-- .custom-header -->
 
 
 
@@ -149,56 +122,40 @@ img.emoji {
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div class="singular-content-wrap">
-				
-<article id="post-2" class="post-2 page type-page status-publish hentry">
-				<header class="entry-header">
-				<h1 class="entry-title section-title">My journey</h1>			</header><!-- .entry-header -->
-			<!-- Page/Post Single Image Disabled or No Image set in Post Thumbnail -->
+				<article id="post-255" class="post-255 post type-post status-publish format-standard hentry category-information-security">
+	
+		<header class="entry-header">
+			<h1 class="section-title">UNbreakable CTF 2021 S2 (individual) Writeups</h1>
+						<div class="entry-meta">
+				<span class="posted-on"><span class="screen-reader-text"> Posted on </span><a href="/2021/12/07/unbreakable-ctf-2021-s2-individual-writeups/" rel="bookmark"><time class="entry-date published updated" datetime="2021-12-07T17:37:47+00:00">7 December 2021</time></a></span>			</div>
+<!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+		<!-- Page/Post Single Image Disabled or No Image set in Post Thumbnail -->
 	<div class="entry-content">
-
 		
-<div class="wp-block-image is-style-rounded"><figure class="aligncenter size-thumbnail"><img loading="lazy" width="150" height="150" src="/wp-content/uploads/2021/10/profile-pic-150x150.jpeg" alt="" class="wp-image-68" srcset="/wp-content/uploads/2021/10/profile-pic-150x150.jpeg 150w, /wp-content/uploads/2021/10/profile-pic-666x666.jpeg 666w" sizes="(max-width: 150px) 100vw, 150px"></figure></div>
+<p class="has-text-align-center">These are my writeups for the mentioned <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)" data-type="URL" data-id="https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)" target="_blank">CTF</a> contest I participated in. The national ranks can be found here: <a rel="noreferrer noopener" href="https://unr21s2-individual.cyberedu.ro/#ranks" data-type="URL" data-id="https://unr21s2-individual.cyberedu.ro/#ranks" target="_blank">unr21s2-individual.cyberedu.ro/#ranks</a> . GG everyone.</p>
 
 
 
-<pre class="wp-block-preformatted has-small-font-size">It all started in a small Transylvanian town, during a freezing winter night, on 22<sup>nd</sup> of December '99. <span class="has-inline-color has-blue-color">Childhood stage</span> initiated.</pre>
-
-
-
-<pre class="wp-block-preformatted has-small-font-size">I started school in 2007 at <em>Liceul Teoretic „Sfântul Nicolae”</em> Gheorgheni, Harghita. <span class="has-inline-color has-blue-color">Schoolboy stage</span> initiated. I studied here until the 8<sup>th</sup> grade, years in which I excelled in <strong>composition</strong> and <strong>geography</strong>.</pre>
-
-
-
-<pre class="wp-block-preformatted has-small-font-size">In 2015 the schoolboy stage had been completed, and a new passion emerged: <strong>computer science</strong>. So it was time for a proper high school: <em>Colegiul Național de Informatică „Grigore Moisil”</em> Brașov. Big town, new challenges and new opportunities. <span class="has-inline-color has-blue-color">High school student stage</span> initiated.</pre>
-
-
-
-<pre class="wp-block-preformatted has-small-font-size">After 4 years full of experiences of all kinds, the high school student stage was finally completed, this time with a new <em>flavor</em> to be added to the same passion: <strong>cybersecurity</strong>. 
-So, in 2019, it was time for a proper college: <em><strong>Faculty of Mathematics and Computer Science</strong></em> from <em>Babeș-Bolyai University</em>, Cluj-Napoca. The specialization is computer science in English, and now I'm in the final year -&gt; <span class="has-inline-color has-blue-color">student stage</span> ongoing.
-
-To be continued ...</pre>
-
-
-
-<blockquote class="wp-block-quote is-style-default">
-<p><sup><em>If you want to keep a secret, you must also hide it from yourself.</em></sup></p>
-<cite><strong>George Orwell</strong></cite>
-</blockquote>
-
-
-
-<div class="wp-block-buttons alignwide is-content-justification-center">
-<div class="wp-block-button has-custom-font-size is-style-outline has-extra-small-font-size"><a class="wp-block-button__link has-medium-gray-color has-eighty-black-background-color has-text-color has-background" href="https://shattereddisk.github.io/rickroll/rickroll.mp4"><em><span class="has-inline-color has-gray-color">all my secrets</span></em></a></div>
-</div>
-
-
-
-<p></p>
+<iframe width="999vw" height="32000" src="https://docs.google.com/document/d/e/2PACX-1vSokc2FONQGzGGLFC5qWCJMHjT0mKignuCtUhwBy8ZKUjS04vCsuH9DI1OJFI0nlCND0a8T-mGsIEd5/pub?embedded=true">
+</iframe>
 	</div>
 <!-- .entry-content -->
 
-	</article><!-- #post-2 -->
-			</div>	<!-- .singular-content-wrap -->
+	<footer class="entry-footer">
+		<div class="entry-meta">
+			<span class="cat-links"><span class="screen-reader-text">Categories</span><a href="/category/information-security/" rel="category tag">Information security</a></span>		</div>
+<!-- .entry-meta -->
+
+			</footer><!-- .entry-footer -->
+</article><!-- #post-255 -->
+
+	<nav class="navigation post-navigation" role="navigation" aria-label="Posts">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="/2021/10/13/how-malware-misbehaves-how-to-punish-it/" rel="prev"><span class="screen-reader-text">Previous Post</span><span aria-hidden="true" class="nav-subtitle">Prev Post</span> <span class="nav-title">How malware misbehaves &#038; how to punish it</span></a></div></div>
+	</nav>			</div>
+<!-- .singular-content-wrap -->
 		</main><!-- #main -->
 	</div>
 <!-- #primary -->
@@ -219,7 +176,7 @@ To be continued ...</pre>
 <h1 class="has-text-align-left"><strong>Music corner</strong></h1>
 </div></section><section id="block-36" class="widget widget_block"> <div class="widget-wrap">
 <figure class="wp-block-embed is-type-rich is-provider-spotify wp-block-embed-spotify wp-embed-aspect-21-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe loading="lazy" title="Spotify Embed: A new dimension" width="100%" height="380" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" src="https://open.spotify.com/embed/playlist/3vebjKDMvjL1UhGIDBFYdy?si=8c927bd5307f4174"></iframe>
+<iframe loading="lazy" title="Spotify Embed: A new dimension" width="100%" height="380" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" src="https://open.spotify.com/embed/playlist/3vebjKDMvjL1UhGIDBFYdy?si=8c927bd5307f4174&utm_source=oembed"></iframe>
 </div></figure>
 </div></section>			</div>
 <!-- .widget-area -->

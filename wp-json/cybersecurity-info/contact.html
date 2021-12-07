@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contacteaza-ne</title>
+  <link rel="icon" href="/cybersecurity-info/anonymous.png">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+<style>body{
+  background-color: black;
+  color: red;
+  font-family: 'Slabo 27px', serif;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+    background-color: #df2006;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}</style>
+</head>
+<body>
+
+<h3>Formular de contact</h3>
+
+<div class="container">
+  <form action="index.html">
+    <label for="fname">Nume</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Prenume</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Tara</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+        <option value="rou">Romania</option>
+    </select>
+
+    <label for="subject">Subiect</label>
+    <textarea id="subject" name="subject" placeholder="Scrieti aici.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
