@@ -12,7 +12,7 @@
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description>Technology &#38; Information Security Enthusiast</description>
-	<lastBuildDate>Wed, 13 Oct 2021 10:29:52 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 07 Dec 2021 17:37:47 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,29 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>UNbreakable CTF 2021 S2 (individual) Writeups</title>
+		<link>/2021/12/07/unbreakable-ctf-2021-s2-individual-writeups/</link>
+		
+		<dc:creator><![CDATA[spurge]]></dc:creator>
+		<pubDate>Tue, 07 Dec 2021 17:37:47 +0000</pubDate>
+				<category><![CDATA[Information security]]></category>
+		<guid isPermaLink="false">/?p=255</guid>
+
+					<description><![CDATA[These are my writeups for the mentioned CTF contest I participated in. The national ranks can be found here: unr21s2-individual.cyberedu.ro/#ranks<p><a href="/2021/12/07/unbreakable-ctf-2021-s2-individual-writeups/" class="more-link">Continue reading<span class="screen-reader-text">UNbreakable CTF 2021 S2 (individual) Writeups</span></a></p>]]></description>
+										<content:encoded><![CDATA[
+<p class="has-text-align-center">These are my writeups for the mentioned <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)" data-type="URL" data-id="https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)" target="_blank">CTF</a> contest I participated in. The national ranks can be found here: <a rel="noreferrer noopener" href="https://unr21s2-individual.cyberedu.ro/#ranks" data-type="URL" data-id="https://unr21s2-individual.cyberedu.ro/#ranks" target="_blank">unr21s2-individual.cyberedu.ro/#ranks</a> . GG everyone.</p>
+
+
+
+<iframe width="999vw" height="32000"
+src="https://docs.google.com/document/d/e/2PACX-1vSokc2FONQGzGGLFC5qWCJMHjT0mKignuCtUhwBy8ZKUjS04vCsuH9DI1OJFI0nlCND0a8T-mGsIEd5/pub?embedded=true">
+</iframe>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>How malware misbehaves &#038; how to punish it</title>
 		<link>/2021/10/13/how-malware-misbehaves-how-to-punish-it/</link>
 		
@@ -78,11 +101,11 @@
 
 
 
-<div class="wp-duotone-filter-61a2cadf760e7 wp-block-image"><figure class="alignleft size-large is-resized"><img loading="lazy" src="/wp-content/uploads/2021/10/proactivity-edited.png" alt="" class="wp-image-166" width="1069" height="234" srcset="/wp-content/uploads/2021/10/proactivity-edited.png 1254w, /wp-content/uploads/2021/10/proactivity-edited-300x66.png 300w, /wp-content/uploads/2021/10/proactivity-edited-1024x225.png 1024w, /wp-content/uploads/2021/10/proactivity-edited-768x168.png 768w" sizes="(max-width: 1069px) 100vw, 1069px" /></figure></div>
+<div class="wp-duotone-filter-61afa33b709fd wp-block-image"><figure class="alignleft size-large is-resized"><img loading="lazy" src="/wp-content/uploads/2021/10/proactivity-edited.png" alt="" class="wp-image-166" width="1069" height="234" srcset="/wp-content/uploads/2021/10/proactivity-edited.png 1254w, /wp-content/uploads/2021/10/proactivity-edited-300x66.png 300w, /wp-content/uploads/2021/10/proactivity-edited-1024x225.png 1024w, /wp-content/uploads/2021/10/proactivity-edited-768x168.png 768w" sizes="(max-width: 1069px) 100vw, 1069px" /></figure></div>
 
 	<style>
-		.wp-duotone-filter-61a2cadf760e7 img {
-			filter: url( #wp-duotone-filter-61a2cadf760e7 );
+		.wp-duotone-filter-61afa33b709fd img {
+			filter: url( #wp-duotone-filter-61afa33b709fd );
 		}
 	</style>
 
@@ -96,7 +119,7 @@
 		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"
 	>
 		<defs>
-			<filter id="wp-duotone-filter-61a2cadf760e7">
+			<filter id="wp-duotone-filter-61afa33b709fd">
 				<feColorMatrix
 					type="matrix"
 										values=".299 .587 .114 0 0
