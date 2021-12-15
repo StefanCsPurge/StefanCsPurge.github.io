@@ -12,7 +12,7 @@
 	<atom:link href="/category/information-security/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description>Technology &#38; Information Security Enthusiast</description>
-	<lastBuildDate>Tue, 07 Dec 2021 17:37:47 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 15 Dec 2021 19:16:29 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,47 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>UNbreakable CTF 2021 S2 (teams) Writeups</title>
+		<link>/2021/12/15/unbreakable-ctf-2021-s2-teams-writeups/</link>
+		
+		<dc:creator><![CDATA[spurge]]></dc:creator>
+		<pubDate>Wed, 15 Dec 2021 19:10:03 +0000</pubDate>
+				<category><![CDATA[Information security]]></category>
+		<guid isPermaLink="false">/?p=287</guid>
+
+					<description><![CDATA[These are the writeups for the mentioned&#160;CTF&#160;contest I participated in, this time as part of a team (representing the Babeș-Bolyai<p><a href="/2021/12/15/unbreakable-ctf-2021-s2-teams-writeups/" class="more-link">Continue reading<span class="screen-reader-text">UNbreakable CTF 2021 S2 (teams) Writeups</span></a></p>]]></description>
+										<content:encoded><![CDATA[
+<p>These are the writeups for the mentioned&nbsp;<a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)" target="_blank">CTF</a>&nbsp;contest I participated in, this time as part of a team (representing the Babeș-Bolyai University).</p>
+
+
+
+<p><strong>Team </strong>&#8216;The Few Chosen&#8217;: <strong>Noria, D. Toma, Spurge</strong><br><strong>Won: 3rd place</strong><br>National ranks: <a href="https://unr21s2-echipe.cyberedu.ro/#ranks"></a><a href="https://unr21s2-echipe.cyberedu.ro/#ranks">https://unr21s2-echipe.cyberedu.ro/#ranks</a></p>
+
+
+
+<iframe loading="lazy" width="1999" height="1200" src="https://drive.google.com/file/d/1yexnw4BhZzqXyl4zrHpxOIOewu9hSv-I/preview" allow="autoplay"></iframe>
+
+
+
+<hr class="wp-block-separator is-style-wide"/>
+
+
+
+<p>These writeups can also be found <a rel="noreferrer noopener" href="https://glacier-acrylic-3f2.notion.site/Unbreakable-2021-S2-teams-Writeups-e9816332d33a48db99b1f30f9029c559" data-type="URL" data-id="https://glacier-acrylic-3f2.notion.site/Unbreakable-2021-S2-teams-Writeups-e9816332d33a48db99b1f30f9029c559" target="_blank">here</a>.</p>
+
+
+
+<hr class="wp-block-separator is-style-wide"/>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="724" src="/wp-content/uploads/2021/12/ae444f90-9c60-11eb-b4a2-87f5b1a33560-1024x724.png" alt="" class="wp-image-296" srcset="/wp-content/uploads/2021/12/ae444f90-9c60-11eb-b4a2-87f5b1a33560-1024x724.png 1024w, /wp-content/uploads/2021/12/ae444f90-9c60-11eb-b4a2-87f5b1a33560-300x212.png 300w, /wp-content/uploads/2021/12/ae444f90-9c60-11eb-b4a2-87f5b1a33560-768x543.png 768w, /wp-content/uploads/2021/12/ae444f90-9c60-11eb-b4a2-87f5b1a33560-1536x1086.png 1536w, /wp-content/uploads/2021/12/ae444f90-9c60-11eb-b4a2-87f5b1a33560.png 2000w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>UNbreakable CTF 2021 S2 (individual) Writeups</title>
 		<link>/2021/12/07/unbreakable-ctf-2021-s2-individual-writeups/</link>
 		
@@ -42,9 +83,16 @@
 
 
 
-<iframe width="999vw" height="32000"
-src="https://docs.google.com/document/d/e/2PACX-1vSokc2FONQGzGGLFC5qWCJMHjT0mKignuCtUhwBy8ZKUjS04vCsuH9DI1OJFI0nlCND0a8T-mGsIEd5/pub?embedded=true">
+<p>Writeup link <a href="https://docs.google.com/document/d/e/2PACX-1vSokc2FONQGzGGLFC5qWCJMHjT0mKignuCtUhwBy8ZKUjS04vCsuH9DI1OJFI0nlCND0a8T-mGsIEd5/pub" data-type="URL" data-id="https://docs.google.com/document/d/e/2PACX-1vSokc2FONQGzGGLFC5qWCJMHjT0mKignuCtUhwBy8ZKUjS04vCsuH9DI1OJFI0nlCND0a8T-mGsIEd5/pub" target="_blank" rel="noreferrer noopener">here</a>.</p>
+
+
+
+<iframe loading="lazy" width="1999" height="31500" src="https://docs.google.com/document/d/e/2PACX-1vSokc2FONQGzGGLFC5qWCJMHjT0mKignuCtUhwBy8ZKUjS04vCsuH9DI1OJFI0nlCND0a8T-mGsIEd5/pub?embedded=true">
 </iframe>
+
+
+
+<p></p>
 ]]></content:encoded>
 					
 		
@@ -101,11 +149,11 @@ src="https://docs.google.com/document/d/e/2PACX-1vSokc2FONQGzGGLFC5qWCJMHjT0mKig
 
 
 
-<div class="wp-duotone-filter-61afa350c15f5 wp-block-image"><figure class="alignleft size-large is-resized"><img loading="lazy" src="/wp-content/uploads/2021/10/proactivity-edited.png" alt="" class="wp-image-166" width="1069" height="234" srcset="/wp-content/uploads/2021/10/proactivity-edited.png 1254w, /wp-content/uploads/2021/10/proactivity-edited-300x66.png 300w, /wp-content/uploads/2021/10/proactivity-edited-1024x225.png 1024w, /wp-content/uploads/2021/10/proactivity-edited-768x168.png 768w" sizes="(max-width: 1069px) 100vw, 1069px" /></figure></div>
+<div class="wp-duotone-filter-61ba3fbf3c827 wp-block-image"><figure class="alignleft size-large is-resized"><img loading="lazy" src="/wp-content/uploads/2021/10/proactivity-edited.png" alt="" class="wp-image-166" width="1069" height="234" srcset="/wp-content/uploads/2021/10/proactivity-edited.png 1254w, /wp-content/uploads/2021/10/proactivity-edited-300x66.png 300w, /wp-content/uploads/2021/10/proactivity-edited-1024x225.png 1024w, /wp-content/uploads/2021/10/proactivity-edited-768x168.png 768w" sizes="(max-width: 1069px) 100vw, 1069px" /></figure></div>
 
 	<style>
-		.wp-duotone-filter-61afa350c15f5 img {
-			filter: url( #wp-duotone-filter-61afa350c15f5 );
+		.wp-duotone-filter-61ba3fbf3c827 img {
+			filter: url( #wp-duotone-filter-61ba3fbf3c827 );
 		}
 	</style>
 
@@ -119,7 +167,7 @@ src="https://docs.google.com/document/d/e/2PACX-1vSokc2FONQGzGGLFC5qWCJMHjT0mKig
 		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"
 	>
 		<defs>
-			<filter id="wp-duotone-filter-61afa350c15f5">
+			<filter id="wp-duotone-filter-61ba3fbf3c827">
 				<feColorMatrix
 					type="matrix"
 										values=".299 .587 .114 0 0
