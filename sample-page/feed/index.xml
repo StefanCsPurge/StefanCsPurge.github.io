@@ -7,15 +7,15 @@
 	>
 <channel>
 	<title>
-	Comments on: My journey	</title>
+	Comments on: My journey (summarized)	</title>
 	<atom:link href="/sample-page/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description>Technology &#38; Information Security Enthusiast</description>
-	<lastBuildDate>Tue, 05 Oct 2021 13:50:51 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 28 Feb 2022 18:46:30 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.8.2</generator>
+	<generator>https://wordpress.org/?v=5.9.1</generator>
 </channel>
 </rss>
