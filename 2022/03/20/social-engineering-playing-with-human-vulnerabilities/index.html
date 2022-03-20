@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>Social Engineering. Playing with human vulnerabilities :) &#8211; M. Ștefan Cristian</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="M. Ștefan Cristian &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="M. Ștefan Cristian &raquo; Comments Feed" href="/comments/feed/">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/localhost\/wordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.9.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.9.2" type="text/css" media="all">
+<style id="wp-block-library-theme-inline-css" type="text/css">.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code>code{font-family:Menlo,Consolas,monaco,monospace;color:#1e1e1e;padding:.8em 1em;border:1px solid #ddd;border-radius:4px}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-group:where(.has-background){padding:1.25em 2.375em}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto;opacity:.4}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}</style>
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--eighty-black: #151515;--wp--preset--color--sixty-five-black: #363636;--wp--preset--color--gray: #444444;--wp--preset--color--medium-gray: #777777;--wp--preset--color--light-gray: #f9f9f9;--wp--preset--color--bright-pink: #f5808c;--wp--preset--color--dark-yellow: #ffa751;--wp--preset--color--yellow: #ffbf00;--wp--preset--color--red: #db4f3d;--wp--preset--color--blue: #008ec2;--wp--preset--color--dark-blue: #133ec2;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 16px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 42px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--extra-small: 13px;--wp--preset--font-size--normal: 18px;--wp--preset--font-size--huge: 56px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}</style>
+<link rel="stylesheet" id="signify-style-css" href="/wp-content/themes/signify/style.css?ver=20211003-164554" type="text/css" media="all">
+<link rel="stylesheet" id="signify-dark-style-css" href="/wp-content/themes/signify-dark/style.css?ver=20220314-224648" type="text/css" media="all">
+<link rel="stylesheet" id="signify-block-style-css" href="/wp-content/themes/signify/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="signify-dark-block-style-css" href="/wp-content/themes/signify-dark/assets/css/child-blocks.css?ver=20220314-224932" type="text/css" media="all">
+<link rel="stylesheet" id="signify-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans%7CPlayfair+Display&#038;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="/wp-content/themes/signify/css/font-awesome/css/font-awesome.css?ver=4.7.0" type="text/css" media="all">
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://localhost/wordpress/wp-content/themes/signify/js/html5.min.js?ver=3.7.3' id='signify-html5-js'></script>
+<![endif]-->
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/354">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.9.2">
+<link rel="canonical" href="/2022/03/20/social-engineering-playing-with-human-vulnerabilities/">
+<link rel="shortlink" href="/?p=354">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%2Fwordpress%2F2022%2F03%2F20%2Fsocial-engineering-playing-with-human-vulnerabilities%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%2Fwordpress%2F2022%2F03%2F20%2Fsocial-engineering-playing-with-human-vulnerabilities%2F&#038;format=xml">
+		<style type="text/css">.site-title a,
+			.site-description {
+				color: #b7b7b7;
+			}</style>
+		<link rel="icon" href="/wp-content/uploads/2021/10/icon.png" sizes="32x32">
+<link rel="icon" href="/wp-content/uploads/2021/10/icon.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/wp-content/uploads/2021/10/icon.png">
+<meta name="msapplication-TileImage" content="http://localhost/wordpress/wp-content/uploads/2021/10/icon.png">
+</head>
+
+<body class="post-template-default single single-post postid-354 single-format-standard wp-embed-responsive fluid-layout navigation-classic no-sidebar full-width-layout excerpt header-media-fluid header-media-text-disabled has-header-image color-scheme-dark menu-type-classic menu-style-full-width header-style-one">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header id="masthead" class="site-header">
+		<div class="site-header-main">
+			<div class="wrapper">
+				
+<div class="site-branding">
+	
+	<div class="site-identity">
+					<p class="site-title"><a href="/" rel="home">M. Ștefan Cristian</a></p>
+					<p class="site-description">Technology &amp; Information Security Enthusiast</p>
+			</div>
+<!-- .site-branding-text-->
+</div>
+<!-- .site-branding -->
+
+					<div id="site-header-menu" class="site-header-menu">
+		<div id="primary-menu-wrapper" class="menu-wrapper">
+			<div class="menu-toggle-wrapper">
+				<button id="menu-toggle" class="menu-toggle" aria-controls="top-menu" aria-expanded="false"><span class="menu-label">Menu</span></button>
+			</div>
+<!-- .menu-toggle-wrapper -->
+
+			<div class="menu-inside-wrapper">
+				<nav id="site-navigation" class="main-navigation default-page-menu" role="navigation" aria-label="Primary Menu">
+
+									<ul id="primary-menu" class="menu nav-menu">
+<li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-19"><a href="/">Home</a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="/about/">About</a></li>
+<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-21"><a href="/blog/">Blog</a></li>
+<li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-252"><a href="/recommendations/">Recommendations</a></li>
+<li id="menu-item-96" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96"><a href="/cybersecurity-info">Cyberattacks intro (RO)</a></li>
+</ul>				
+				</nav><!-- .main-navigation -->
+
+							</div>
+<!-- .menu-inside-wrapper -->
+		</div>
+<!-- #primary-menu-wrapper.menu-wrapper -->
+
+			</div>
+<!-- .site-header-menu -->
+			</div>
+<!-- .wrapper -->
+		</div>
+<!-- .site-header-main -->
+	</header><!-- #masthead -->
+
+	
+
+
+
+
+	<div id="content" class="site-content">
+		<div class="wrapper">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+			<div class="singular-content-wrap">
+				<article id="post-354" class="post-354 post type-post status-publish format-standard hentry category-information-security tag-manipulation tag-socialengineering">
+	
+		<header class="entry-header">
+			<h1 class="section-title">Social Engineering. Playing with human vulnerabilities :)</h1>
+						<div class="entry-meta">
+				<span class="posted-on"><span class="screen-reader-text"> Posted on </span><a href="/2022/03/20/social-engineering-playing-with-human-vulnerabilities/" rel="bookmark"><time class="entry-date published updated" datetime="2022-03-20T18:40:20+00:00">20 March 2022</time></a></span>			</div>
+<!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+		<!-- Page/Post Single Image Disabled or No Image set in Post Thumbnail -->
+	<div class="entry-content">
+		
+<div class="wp-block-cover is-light">
+<span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img width="1920" height="1280" class="wp-block-cover__image-background wp-image-355" alt="" src="/wp-content/uploads/2022/03/dan-farrell-fT49QnFucQ8-unsplash.jpg" style="object-position:50% 36%" data-object-fit="cover" data-object-position="50% 36%"><div class="wp-block-cover__inner-container">
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p class="has-text-align-center has-light-gray-color has-text-color has-normal-font-size"><em><strong>If you think you can’t be tricked, you’re just the person I’d like to meet.</strong></em></p>
+
+
+
+<p class="has-text-align-center has-light-gray-color has-text-color has-extra-small-font-size">R. Paul Wilson</p>
+
+
+
+<p></p>
+</div>
+</div>
+
+
+
+<hr class="wp-block-separator">
+
+
+
+<h3>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">What</mark> is social engineering ? </h3>
+
+
+
+<p>Well, given the plethora of news about scammers and people being easily fooled by them, the public opinion about this subject is anything but positive. However,<mark style="background-color:rgba(0, 0, 0, 0);color:#139213" class="has-inline-color">make no mistake</mark>, it surely isn&#8217;t just that&#8230; <br>Actually, <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-bright-pink-color"><em><strong>social engineering</strong></em> is the art, or better yet, science of skillfully maneuvering a person to take an action that <em> <strong>may</strong></em>  or <em> <strong>may not</strong></em>  be in the &#8220;target&#8217;s&#8221; best interest</mark>. Thus, besides crimes, you can also notice it in: business marketing, the way children get their parents to give in to their demands, the way doctors, lawyers, or psychologists obtain information from their clients. Obviously, you can also find it in law enforcement, and in dating — it is truly used in every human interaction, from babies to politicians &#8230;</p>
+
+
+
+<h3>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Types</mark> of social engineers</h3>
+
+
+
+<ul>
+<li>
+<strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">Hackers &amp; Penetration testers</mark></strong>: as modern software gets more difficult to break into, hackers are turning to social engineering skills more than ever.</li>
+<li>
+<strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">Spies</mark></strong>: simply put, it is a lifestyle for them. They mostly use it to build credibility and to &#8220;fool&#8221; victims into believing they are someone or something they are not.</li>
+<li>
+<strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">Identity thieves</mark></strong>: they use information such as a person&#8217;s name, bank account numbers, address, birth date, and social security number without the owner&#8217;s knowledge.</li>
+<li>
+<strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">Disgruntled employees</mark></strong>: often enter into an adversarial relationship with their employer. They typically hide their level of displeasure to not put their employment at risk, yet they resort to theft, vandalism or other crimes as revenge (moles).</li>
+<li>
+<strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">Scammers</mark></strong>: usually driven by greed or the desire to &#8220;make a buck&#8221;. They master the ability of reading people in order to target a vulnerable victim.</li>
+<li>
+<strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">Executive recruiters</mark></strong>: are very adept at not only reading people but also understanding what motivates people, in order to please both the job seeker and the job poster.</li>
+<li>
+<strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">Salespeople</mark></strong>: use their skills to find out what people&#8217;s needs are and then see whether they can satisfy them.</li>
+<li>
+<strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">Governments</mark></strong>: use it to control the messages they release as well as the people they govern (they utilize techniques like: social proof, authority and scarcity). This is not always negative, as some of their messages are for the good of the people, and using certain elements of social engineering can make the message more appealing and more widely accepted. However, when politicians want to <strong>avoid</strong> talking about something, they resort to using <strong><em><a rel="noreferrer noopener" href="https://photos.app.goo.gl/4tj6fEHwK1f4XH6u8" data-type="URL" data-id="https://photos.app.goo.gl/4tj6fEHwK1f4XH6u8" target="_blank">Wooden Language</a></em></strong> <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-dark-blue-color">(this is a perfect example that I found while visiting <em>The</em> <em>Romanian Kitsch Museum</em> in Bucharest)</mark>.</li>
+<li>
+<strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">Doctors, psychologists, and lawyers</mark></strong>: must use elicitation and proper interview and interrogation tactics, as well as many if not all of the psychological principles of social engineering to manipulate their clients into the direction they want them to take.</li>
+</ul>
+
+
+
+<hr class="wp-block-separator is-style-wide">
+
+
+
+<p class="has-text-align-center">Given the information above, you&#8217;ve probably realized that there&#8217;s a high probability to be a target of such trickery. <br><em>How do I stay safe?</em>  Great question. <br>Well, what I can say for sure, is that you are <em>safer</em> if you know and understand the techniques used for a successful <strong>social engineering attack</strong>. This is why, in the next section, I&#8217;m going to explain <strong>decisive skills</strong> like: <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">information gathering</mark>, <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">elicitation</mark>, <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">pretexting</mark>, <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">microexpressions</mark>, <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Neurolinguistic Programming</mark>, <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">interview &amp; interrogation</mark>, <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">building rapport</mark>, <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">The Human Buffer Overflow</mark>, <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">influence tactics</mark> (reciprocation, obligation, concession, scarcity, authority, commitment, liking, social proof), <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">framing</mark>, and, the last but not least, <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">manipulation</mark>.</p>
+
+
+
+<p class="has-text-align-center has-eighty-black-background-color has-background has-normal-font-size"><kbd><em><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-white-color">With enough time and enough effort anyone can be social engineered. Those words are true, as scary as they are. That doesn’t mean there is no hope; it means your job is to make malicious social engineering so difficult and time consuming that most hackers will give up.</mark></em> </kbd><br><kbd>(Christopher Hadnagy)</kbd></p>
+
+
+
+<p class="has-text-align-center has-small-font-size">As usual, this information is for education purposes only. A lot of social engineers face <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">prison</mark></strong> time as well. So, have fun, but respect the legal and ethical constraints. Otherwise, make sure that you&#8217;re hiding better than everyone else can hide, in the 21<sup>st </sup>century.</p>
+
+
+
+<hr class="wp-block-separator is-style-wide">
+
+
+
+<h3>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">🕵️‍♀️</mark><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Information</mark> gathering</h3>
+
+
+
+<p class="has-normal-font-size">The most important phase of the attack. Usually takes from days to months, depending on the target. For example, this is what the <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">Russian government</mark> had been doing for at least 8 years in Ukraine, using <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">cyberattacks</mark> and <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">spies</mark>, before starting an invasion on 24<sup>th</sup> of February 2022.</p>
+
+
+
+<p class="has-normal-font-size"><strong>Mindset</strong>: no piece of information is irrelevant; even the slightest detail can lead to a successful breach.</p>
+
+
+
+<p class="has-eighty-black-background-color has-background has-small-font-size"><strong>Example</strong>: <strong>Mati Aharoni</strong> (professional pentester) was tasked with gaining access to a company that had an almost nonexistent Web footprint. After some internet searching, he found a high-ranking company official who used his corporate email on a forum about stamp collecting and who expressed an interest in stamps from the 1950s. Mati created a website like <code>stampcollections.com</code>, where he put 1950s stamp photos found on Google, and embedded a malicious frame that exploited a vulnerability in the popular web browser at the time. So, <strong>accessing the link</strong> would give the attacker control over the victim&#8217;s computer. Then, he crafted an email for this company official. In the email, it&#8217;s stated that he&#8217;s another user of the same forum, who noticed the interest in old stamps, and that his grandfather, who &#8216;passed away&#8217;, left a stamp collection that can be seen on Mati&#8217;s <kbd>stampcollections.com</kbd> website. Before sending the email, for maximum impact, he called the target on the phone. This way, Mati built trust by discussing on a friendly tone about his stamp offer, while also expressing some feelings of sadness for the recent death in his family (triggering compassion). Thus, the target was very eager to see this collection. As soon as the man received the email, he clicked the link and the company’s perimeter was compromised. The <em><strong>tiny piece of information</strong></em> that led to this successful attack: a corporate email on a random website.</p>
+
+
+
+<p class="has-normal-font-size">The <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">problem</mark></strong>: using social media, people can easily share every aspect of their lives with anyone they choose, making potentially damaging information (for their personal &amp; business security) more readily available than ever before. </p>
+
+
+
+<p class="has-eighty-black-background-color has-background has-small-font-size"><strong>Example</strong>: Max Fosh infiltrated into <strong><em>The International Security</em></strong> <strong><em>Convention</em></strong> (the irony). He used a badge found on an <strong>Instagram</strong> post from the event (edited a little bit in Photoshop, then printed) -> video: <a rel="noreferrer noopener" href="https://www.youtube.com/watch?v=qM3imMiERdU" target="_blank">https://youtu.be/qM3imMiERdU</a>. </p>
+
+
+
+<p class="has-normal-font-size">Also, many employees talk about their job title in their social media outlets. This can help a social engineer to profile how many people may be in a department and how the departments are structured.<br>Other <strong>sources</strong> <strong>&amp; techniques</strong>: Apple/Google Maps (for an idea about the target&#8217;s buildings, ways in &amp; out), <a rel="noreferrer noopener" href="https://www.googleguide.com/advanced_operators_reference.html" data-type="URL" data-id="https://www.googleguide.com/advanced_operators_reference.html" target="_blank">Google Dorks</a>, <a rel="noreferrer noopener" href="https://who.is/" data-type="URL" data-id="https://who.is/" target="_blank">WhoIs</a>, NMAP, <a rel="noreferrer noopener" href="https://www.maltego.com/" data-type="URL" data-id="https://www.maltego.com/" target="_blank">Maltego</a>, forums, overhearing conversations, flirting with the target, public reports, or simply the trash (you&#8217;d be surprised how much sensible information is literally dumped). <br><strong>Attackers look for the links between the information extracted from all sources, to create a whole profile.</strong> This profile includes contact numbers, biographies, email naming conventions, special words or phrases that can help in password profiling, family members, physical locations, purchases, leases, contracts, favorite foods/teams/music, the service companies used, etc. Everything is processed in order to find vulnerabilities and come up with the best attack strategy.</p>
+
+
+
+<h3>💬<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Elicitation</mark>
+</h3>
+
+
+
+<p class="has-normal-font-size">In training materials, the <strong><a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/National_Security_Agency" data-type="URL" data-id="https://en.wikipedia.org/wiki/National_Security_Agency" target="_blank">National Security Agency</a></strong> of the United States government defines elicitation as “<strong>the subtle extraction of information during an apparently normal and innocent conversation</strong>.” Generally speaking, being able to use elicitation means you can fashion questions that draw people out and stimulate them to take a <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">path</mark> of a behavior you want</strong>. <br>This method works so well because the conversation can occur anywhere the target feels comfortable (their routine places, for example). Other reasons are that: <br>&#8211; most people have the desire to be polite, especially to strangers<br>&#8211; professionals want to appear well informed and intelligent<br>&#8211; if you are praised, you will often talk more and divulge more<br>&#8211; most people would not lie for the sake of lying<br>&#8211; most people respond kindly to people who appear concerned about them.<br><strong>Goal</strong>: obtain information then utilize that information to motivate a target to the path you want him to take (only through casual conversation). Therefore the attacker must be &#8216;<strong>natural</strong>&#8216;, well <strong>informed</strong> about the subject he&#8217;s talking about, and <strong>not greedy</strong> with the questions, to avoid raising any red flag.</p>
+
+
+
+<h4>Preloading</h4>
+
+
+
+<p class="has-normal-font-size"><em>Preloading</em> can be a critical part of elicitation, and denotes just what it says—preload targets with ideas on how you want them to react to certain information. It is often used in marketing messages (e.g. movie trailers soundtrack). </p>
+
+
+
+<p class="has-eighty-black-background-color has-background has-small-font-size">A simplistic <strong>example</strong>: a friend walks up and says, “I have to tell you a really funny story.” What happens to you? You might even start smiling before the story starts and your anticipation is to hear something funny, so you look and wait for opportunities to laugh. He preloaded you and you anticipated the humor. Another one: interrogators would say “Now think carefully before you answer the next question…”. This kind of statement preloads the target’s mind with the idea that he must be truthful with his next statement.</p>
+
+
+
+<p class="has-normal-font-size">Basically, it&#8217;s all about <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">being able to plant ideas or thoughts in a way that is not obvious or overbearing</mark>, <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">as a first step</mark>, <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">before starting the actual attack</mark>. Because you &#8216;preloaded&#8217; the target, when the time arises to present an absurd idea, it will most probably be accepted.</p>
+
+
+
+<h5>A successful elicitor:</h5>
+
+
+
+<ul class="has-normal-font-size">
+<li>
+<strong>offers a non-judgmental ear</strong> for people to talk about their problems</li>
+<li>
+<strong>appeals to someone&#8217;s ego</strong> (e.g., when you praise someone, they&#8217;ll usually express their humbleness by talking about how the situation actually is => valuable information)</li>
+<li><strong>expresses a mutual interest</strong></li>
+<li>
+<strong>makes a deliberate false statement</strong> (we have the desire to inform others, appear knowledgeable, and be intolerant to misstatements => valuable info when you&#8217;re being corrected by the others)</li>
+<li>
+<strong>offers information in a conversation</strong>, because it almost compels the target to reply with equally useful information</li>
+<li>
+<strong>uses the effects of alcohol</strong>, if possible, as it loosens the victim&#8217;s lips. This is an unfortunate but true fact.</li>
+<li>
+<strong>uses more open-ended questions</strong> (those that cannot be answered with yes or no)</li>
+<li>
+<strong>uses assumptive questions</strong> (to determine whether or not a target possesses the information you&#8217;re after).</li>
+</ul>
+
+
+
+<h3>🎭<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Pretexting</mark>: How to Become Anyone</h3>
+
+
+
+<p class="has-normal-font-size">Pretexting is defined as the <strong>background story, dress, grooming, personality, and attitude</strong> that make up the character you will be for the social engineering audit (you create a new identity). <strong>Chris Nickerson</strong>: <em>it is not about living a lie (&#8230;). You are, in every fiber of your being, the person you are portraying. The way he walks, the way he talks, body language—you become that person.</em> </p>
+
+
+
+<p class="has-normal-font-size">What is a good pretext based on? First of all, the<strong> quality of the information</strong> gathered beforehand. Then, the <strong>practice of dialects/expressions</strong>, the <strong>simplicity</strong> (the simpler the pretext the better the chance of success), <strong>confidence</strong> (helps a lot in convincing the target you are who you say you are; usually achieved by involving personal interests in the pretext), and the finale: providing a <strong>logical conclusion</strong> or follow through for the target. </p>
+
+
+
+<p class="has-eighty-black-background-color has-background has-small-font-size"><strong>Example</strong>: a popular <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">malicious</mark> pretext right now is the fake &#8216;fund raiser&#8217;, who takes advantage of the current Ukrainian crisis. These individuals behave like they care, presenting the atrocities of war (<em>simple</em> <em>pretext</em> that triggers people&#8217;s emotions), and demand money for helping Ukrainians (the <em>logical conclusion</em>). The same happened right after<em> 9/11</em> , 2001.</p>
+
+
+
+<h3>🧠<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Modes</mark> of thinking &amp; the senses</h3>
+
+
+
+<p class="has-normal-font-size">A social engineer has to understand the modes of thinking. Why? Well, if you can first figure out the target&#8217;s dominant mode of thinking (and then use it yourself in subtle ways),  you can unlock the doors of the target&#8217;s mind and help him actually feel at ease when telling you even intimate details. So, how can you figure out someone&#8217;s dominant mode of thinking?</p>
+
+
+
+<p class="has-normal-font-size">The world is brought to our brain by our <strong>senses</strong>: sight, hearing, touch, smell, taste (traditional classification). The modes of thinking are associated with only 3 of them. Therefore, we have the:</p>
+
+
+
+<ul class="has-normal-font-size">
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">visual</mark> thinker (majority): usually remembers what something looked like (colors, textures, brightness / darkness). He can clearly picture a past event and even build a picture for a future event. This individual usually <strong>makes a decision based on what is visually appealing to him regardless of what is really &#8220;better&#8221; for him</strong>. Often uses words like: &#8220;that looks good to me&#8221;, &#8220;I get the picture now&#8221;. Also, visuals need to look at the person speaking to communicate properly.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">auditory</mark> thinker: remembers the sounds of an event in detail (e.g., the alarm was too loud, the woman whispered too low, the scary bark of the dog). Of course, he learns better from what he hears, as in this case the sounds themselves help recall memories.  May use phrases such as: &#8220;loud and clear&#8221;, &#8220;something tells me&#8221;, &#8220;that sounds ok to me&#8221;. Whole encounters can go from great to a disaster with one wrong word spoken to an auditory thinker.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">kinesthetic</mark> thinker: remembers how an event made him feel—the warmth of the room, the beautiful breeze on his skin, how the movie made him jump out of his seat with fear. Often kinesthetic thinkers feel things with their hands to get the sense of the objects. May use phrases such as: &#8220;I can grasp the idea&#8221;, &#8220;I&#8217;ll get in touch with you&#8221;, &#8220;I just wanted to touch base&#8221;, &#8220;how does it feel?&#8221;. They don&#8217;t really react to sights and sounds, thus, social engineers have to get in touch with their feelings to communicate with them efficiently.<br>This is the type of people that must touch everything in the grocery store when they shop, whether they need it or not. By touching the objects, they make a connection. This is what helps them clearly remember the things later. </li>
+</ul>
+
+
+
+<p class="has-normal-font-size">Asking questions that contain some of the key dominant words, observing a target’s reactions, and listening can reveal what dominant sense he or she uses. </p>
+
+
+
+<p class="has-eighty-black-background-color has-background has-small-font-size">Let&#8217;s take the <strong>example</strong> of an excellent salesguy, <em><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-dark-yellow-color">Tony</mark></strong></em>, who can figure out someone&#8217;s dominant sense in 60 seconds. When he first engages the target, he has a very shiny silver-and-gold pen in his hand. He gestures a lot and notices whether the person follows the pen with her eyes; if she does slightly, Tony will continually make the gestures bigger to see whether her eyes follow. If that doesn’t seem to work in the first few seconds, he will click the pen open and closed. It isn’t a loud noise, but loud enough to disrupt a thought and draw someone&#8217;s attention if she&#8217;d be an auditory. If he thinks that is working, he will click it with every important thought, causing the target to have a psychological reaction to the sound and what is being said. If that doesn&#8217;t seem to work, he will reach over the table and tap her wrist or forearm, or if he is close enough, touch her shoulder. He doesn&#8217;t touch excessively, but enough to see whether she will shy away or seems overly happy or disturbed by the touch. At this point, he&#8217;s most likely guessed the correct sense and starts to move the conversation in that direction, to make the target more comfortable. <br><strong>Why</strong> exactly does Tony do all of this stuff? Think about it: if someone makes you feel &#8220;warm and fuzzy&#8221;, or seems to understand what you are saying, or where you are coming from, you easily open up to, trust, and <strong>let that person in your circle</strong>. </p>
+
+
+
+<h3>🥲<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Microexpressions</mark>
+</h3>
+
+
+
+<p class="has-normal-font-size">Microexpressions are facial expressions which are not easily controllable and occur in reaction to emotions. Many times they last for as short as one-twenty-fifth of a second. <strong>Because these expressions are involuntary muscular movements due to an emotional response, they are nearly impossible to control. </strong>Social engineers use them to notice deception and figure out how the target is really feeling, in order to act accordingly. Another crucial reason is stated by <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Paul_Ekman" data-type="URL" data-id="https://en.wikipedia.org/wiki/Paul_Ekman" target="_blank">Dr. Paul Ekman</a>: <em><strong>If producing the facial expression can cause the emotion, that must mean that our facial movements can affect the emotions we feel, and maybe even the emotions of those around us.</strong></em> Basically, social engineers <strong>practice</strong> producing the facial expressions voluntarily, as it makes it easier to achieve a certain emotional state.</p>
+
+
+
+<p class="has-normal-font-size">Let&#8217;s take a look at the <em>microexpressions</em> linked with some basic or biologically universal emotions:</p>
+
+
+
+<ul class="has-normal-font-size">
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Anger</mark> (one of the easiest to spot): the lips become narrow and tense. The eyebrows slant downward and are pushed together, then the most noticeable characteristic comes into play: the glare.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Disgust</mark>: often characterized by the upper lip being raised to expose the teeth, and a wrinkling of the nose. May also result in both cheeks being raised when the nose is wrinkled up, as if to try to block the passage of the bad smell or thought into one’s personal space.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Contempt</mark>: very strong emotion that is often confused with disgust. <em>Contempt is only experienced about people or the actions of people, but not about tastes, smells, or touches </em>(<a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Paul_Ekman" data-type="URL" data-id="https://en.wikipedia.org/wiki/Paul_Ekman" target="_blank">Dr. Ekman</a>)<em>. </em> Contempt is distinguished by wrinkling the nose and raising the lip, but only on one side of the face, whereas disgust is the raising of the whole lip and the wrinkling of the whole nose.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Fear</mark>: often confused with surprise because the 2 emotions cause similar muscular reactions in the face. The eyes are open wide, the eyebrows are crunched together inward. The lips are pulled together and out towards the ears. Fear can be a big motivator to do many things that you (or your target) would not normally consider doing.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Surprise</mark>: the eyebrows are raised (eyes open wide), the jaw is unhinged and opened slightly.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Sadness</mark>: overwhelming and strong emotion. It can also be very subtle. Mouth is open only slightly, the corners of the lips are down and the cheeks are raised a little. The eyes look down and the eyelids droop. Because we can feel it ourselves when seeing other people expressing this emotion, social engineers use sadness in their advantage <strong>a lot</strong>.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Happiness</mark>. The <strong>true</strong> and the <strong>fake smile</strong> are an important aspect of human expressions to know how to read, and as a social engineer to know how to reproduce. When a person smiles for real, <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Duchenne_de_Boulogne" data-type="URL" data-id="https://en.wikipedia.org/wiki/Duchenne_de_Boulogne" target="_blank">de Boulogne</a> indicates, two muscles are triggered, the <em>zygomaticus major</em> and the <em>orbicularis oculi</em>. He determined that the <em>orbicularis oculi</em> (muscle around the eyes) cannot be triggered voluntarily and that is what separates a real from a fake smile. Therefore, even if recent research indicates some can train themselves to trigger that muscle, more often than not <strong>a fake smile is all about <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-white-color">the eyes</mark></strong>. A real smile is broad with narrow eyes, raised cheeks, and pulled-up lower eyelids (it usually involves the whole face, from the eyes to the mouth).</li>
+</ul>
+
+
+
+<p class="has-normal-font-size">Showing <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-light-gray-color">genuine</mark> emotions</strong> is known to be a difficult task. One of the tricks actors use to be able to successfully show proper emotion is to remember and focus on a time when they truly felt the emotion they need to portray. Learning to <strong>correctly exhibit</strong> <strong>the subtle hints of</strong> <strong>microexpressions</strong> can cause the neurons in your target’s brain to mirror the emotional state they feel you are displaying, making your target more willing to comply with your request.</p>
+
+
+
+<p class="has-normal-font-size">On the other hand, using this knowledge, there are 4 things that can help you detect <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">lies / deceit</mark></strong> in a target:</p>
+
+
+
+<ul class="has-normal-font-size">
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">contradictions</mark>: watching the person’s microexpressions while you question him about a contradiction is always helpful.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">hesitation</mark>: if you ask a question and the answer should have come quickly from the person, but he hesitates beforehand, it can be an indication that he was using the time to fabricate an answer or to decide whether he wants to reveal some facts.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">changes in behavior</mark>: during a discussion the target may change his behavior every time a certain topic is brought up. Maybe you notice an expression change or a shift in the way he sits, or a marked hesitation. All of these actions can indicate deceit.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">hand gestures</mark>: many professionals state that when someone is being untruthful he will touch or rub his face often. Some psychological connection exists between rubbing the face and generating a fabrication. Taking note of a change in the size, frequency, or duration of hand gestures during different topics in the conversation is important.</li>
+</ul>
+
+
+
+<p class="has-normal-font-size"><strong>Why</strong> exactly do social engineers want to detect deceit? If their pretext is someone with authority (manager or department supervisor), and they catch someone lying, they can <strong>use that in their advantage</strong>. <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">By &#8220;forgiving&#8221; the person, they are now owed a favor in return.</mark></p>
+
+
+
+<h3>🗣️<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Neurolinguistic</mark> Programming (NLP)</h3>
+
+
+
+<p class="has-normal-font-size">NLP was developed in the 1970s by Richard Bandler and John Grinder with the guidance of Gregory Bateson. Without any regulating body, the field grew as everybody wanted to learn to control others, lie without getting caught, or solve all their psychological problems.</p>
+
+
+
+<p class="has-normal-font-size">The <strong>new/modern approach</strong> of NLP states that to make a change, the <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">unconscious</mark></strong> mind of the target must be involved, the new behavior must satisfy their original positive intention, and <strong>the change must occur internally, at the state of mind</strong>, rather than at the behavioral level. This new code suggests how NLP can create serious and drastic changes to a person&#8217;s thinking. <br><strong>Example</strong>: increasing your sales by getting someone to start talking about their dreams. Once you have them talking about certain goals or aspirations, you can position your product or service as answering one of the needs to reach those goals. By positively building on your product as fitting a need they have, you give your potential buyer&#8217;s brain a way to connect your product with positive sales. <br>For a social engineer, NLP comes down to using <strong>voice, language, and choice of words to guide people down the path he wants</strong>.</p>
+
+
+
+<p class="has-normal-font-size">You can &#8216;inject&#8217; commands into people&#8217;s mind without their knowledge (yes, I know how that sounds), and <strong>the way you say</strong> things is where the injection occurs; it&#8217;s a moment framed within regular conversation. Sometimes <em>how</em> you say something is more important than <em>what</em> you say. Therefore, using the <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">tones of your voice</mark> to emphasize certain words in a sentence can cause a person&#8217;s unconscious mind to focus on those words.</p>
+
+
+
+<p class="has-eighty-black-background-color has-background has-small-font-size">For the next few paragraphs, the <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-bright-pink-color"><strong>pink, bold</strong></mark> font denotes the words spoken with a <strong>lower</strong> (deep) voice tone. Good social engineers jump between tones very subtly. It&#8217;s an ability that is refined with hours of practice.<br>&#8220;Remember how <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-bright-pink-color"><strong>clean your room</strong></mark> looked last Christmas?&#8221; The embedded command is &#8220;clean your room&#8221;, which includes a time shift to a happier time. This is an example of a pleasant, painless injection.<br>“<strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-bright-pink-color">Buy now</mark></strong>, you can see the <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-bright-pink-color">benefits</mark></strong>!” This one starts with the voice low, then up to a normal tone, then back down for <em>benefits</em>.</p>
+
+
+
+<p class="has-normal-font-size">If you pay close attention <strong>to the way some politicians speak</strong> or <strong>to the voices in commercials</strong>, you&#8217;ll most likely notice this technique. NLP is a powerful topic, and, much like microexpressions, this section only scratched the surface.</p>
+
+
+
+<h3>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">🤷Interview</mark> &amp; Interrogation</h3>
+
+
+
+<p class="has-normal-font-size">The main <strong>difference</strong> between an <em>interview</em> and <em>interrogation</em> is that an interview is in an atmosphere where the target is comfortable both physically and psychologically. In an interrogation the intention is to put some pressure on the target by creating <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">discomfort</mark>, with the goal of gaining a confession or some knowledge the target possesses. Interrogation principles are used widely by successful social engineers. It&#8217;s a skill they&#8217;ll spend a considerable amount of time obtaining.</p>
+
+
+
+<p class="has-normal-font-size">When starting an interview or interrogation, areas observed for changes in the subject are: <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">body posture</mark> (upright, slumped, leaning away),  <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">skin color</mark> (pale, red, white), <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">head position</mark> (upright, tilted, forward/back), <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">eyes</mark> (direction, openness), <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">hands/feet</mark> (movement, position, color), <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">mouth/lips</mark> (position, color, turned up/down), <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">voice</mark> (pitch, rate, changes), <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">words</mark> (short, long, number of syllables, dysfunctions, pauses). Changes can indicate a question or line of questioning that needs more attention. Professionals don&#8217;t watch for only one sign, they <strong>watch for groups of signs</strong>. </p>
+
+
+
+<p class="has-eighty-black-background-color has-background has-small-font-size"><strong>Examples</strong>: defensive posture (the torso is pointing away and the eyes are averting from looking at you), usually appears after asking a question which the target will not answer with the truth. When you feel threatened or scared, your body’s natural reaction is to pull the <strong>elbows</strong> in towards the rib cage. An <strong>increase in</strong> <strong>movement</strong> or “fidgeting” during an interrogation can show an increase in stress levels, signifying that the interrogation is having the desired effect. Blurting out answers quickly is believed to be a sign of practicing the answer. An <strong>open palm</strong> might indicate sincerity.</p>
+
+
+
+<p class="has-normal-font-size">Social engineers have to determine what is &#8220;natural&#8221; in a target (i.e. the <em>baseline</em>) very fast. Being very observant is the key to success with this skill. A method of figuring out the baseline involves asking questions that cause the suspect to access different parts of his brain. The interrogator asks <strong>first nonthreatening questions</strong> that require simple memory and questions that require creative thinking. Then looks for outward manifestation of his brain activating the memory center, such as microexpressions or body language cues. This way, he knows what to expect when asking the <strong>real questions</strong>.</p>
+
+
+
+<p class="has-normal-font-size"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">Theme development</mark> in police interrogations is when the interrogator develops a story to postulate why the suspect may have committed a crime. “<em>So he insulted you and you got so mad, you grabbed the pipe and began hitting his windshield with it.</em>” While the officer is telling the story, he or his partner is watching the body language and microexpressions of the suspect to see if there are any clues that would constitute agreement.</p>
+
+
+
+<p class="has-normal-font-size">The <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/United_States_Department_of_Defense" data-type="URL" data-id="https://en.wikipedia.org/wiki/United_States_Department_of_Defense" target="_blank">Department of Defense</a> has different approaches that professional interrogators use, and social engineers have a lot to learn from them.</p>
+
+
+
+<ul class="has-normal-font-size">
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Direct</mark> approach: The confidence, attitude and manner of the interrogator rules out that the suspect is innocent at all. Without threatening, the interrogator <strong>disarms the suspect by telling him anyone else would have done the same thing</strong>. Social engineers use this if their pretext is a person who has power over the target. They assume the target &#8220;owes&#8221; the response they seek.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Indirect</mark> approach: The suspect is allowed to tell his side of the story in detail and the interrogator looks for omissions, discrepancies, and distortions. The interrogator’s job is to let the suspect know that the best course of action is to tell the truth.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Sympathetic</mark> approach: The interrogator drops his voice and talks in a lower, quieter tone that gives the impression he is an understanding person. He sits close to the suspect and maybe puts his hand on the suspect’s shoulder or pats him on the arm. Physical contact at the right time is very effective.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Emotional</mark> approach: It <strong>plays on the morals or emotions</strong> of the suspect. Questions such as, “What will your wife or kids think about this?” are used. The thoughts that are aroused emotionally upset him and make him nervous. As these emotions manifest themselves, the interrogator can capitalize on them.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Logical</mark> approach: This non-emotional approach presents strong evidence of guilt. The interrogator should sit erectly and be business-like, displaying confidence.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Indifferent</mark> approach: The interrogator <strong>acts as if he does not need the confession</strong> because the case is solved. At that point the interrogator may try manipulating the suspect into giving his side of the story. Social engineers use this when they&#8217;re caught in an area or situation they should not be in, by acting indifferent instead of afraid that they&#8217;ve been caught. It can cause the person who caught them to not be alarmed as much and afford them an opportunity to dispel any worries.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Face-saving</mark> approach: The interrogator should rationalize the offense, giving the suspect a way out and an excuse to confess and save face.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Egoistical</mark> approach: It&#8217;s all about pride. For it to work you need a suspect who is very <strong>proud</strong> of an accomplishment. Bragging on good looks, intelligence, or the way the crime was performed may stroke his ego enough that he wants to confess to show that, indeed, he was that smart. <br>Playing up someone’s accomplishments gets them <strong>to spill their deepest secrets</strong>. In the case of a U.S. nuclear engineer visiting China, social engineers loaded the man with compliments, and he <em>spilled the beans</em> and divulged information he shouldn’t have.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Exaggeration</mark> approach: If an interrogator <strong>overexaggerates</strong> the case facts, the suspect may admit to what was real. Social engineers use this approach by overexaggerating the task they are there to perform. By overexaggerating the reason for being there you can give the target a reason for providing you lesser access. <strong>Example</strong>:  “I know Mr. Smith wanted me to fix his computer personally because he lost a lot of data, but if you don’t feel comfortable with that, I can potentially fix his problem from another computer in the office.”</li>
+<li>Also, a suspect <strong>rarely confesses his transgressions all at once</strong>. Getting him to make <strong>minor admissions</strong>, such as he was on the site, owned the weapon in question, or owned a similar car, can move him toward admitting more and more, eventually leading to a complete confession.</li>
+</ul>
+
+
+
+<p class="has-normal-font-size"><strong>Gesturing</strong> is often used to get better answers in these situations. There are techniques like <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color"><strong><em>anchoring</em></strong> </mark>(linking statements of a type with a certain gesture, e.g. positive with right hand movement, negative with left hand movement), or <em><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">mirroring</mark></strong></em> where you try to match your gestures to the personality of the target. Mirroring not only involves mimicking a target’s body language but also using gestures that make it easy for a person to listen to you. Seeing gestures a target is familiar with can be comforting to him or her.</p>
+
+
+
+<p class="has-normal-font-size">Finally, if you want to know <strong>how far</strong> some people can go for the sake of &#8220;interrogation&#8221;, take a look at <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">C.I.A.</mark>&#8216;s <a href="https://en.wikipedia.org/wiki/Project_MKUltra" data-type="URL" data-id="https://en.wikipedia.org/wiki/Project_MKUltra" target="_blank" rel="noreferrer noopener">Project MK-Ultra</a>. You won&#8217;t be disappointed 😉 .</p>
+
+
+
+<h3>🫂<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Building</mark> Instant Rapport</h3>
+
+
+
+<p class="has-normal-font-size">Basically, it&#8217;s the ability to make friends with someone in a matter of minutes, and it is a vital skill for social engineers. <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Rapport" data-type="URL" data-id="https://en.wikipedia.org/wiki/Rapport" target="_blank">Wikipedia</a> defines <strong>rapport</strong> as being &#8216;in sync&#8217; with, or being &#8216;on the same wavelength&#8217; as the person with whom you are talking. So, <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-white-color">how does a social engineer build rapport</mark></strong>?</p>
+
+
+
+<ul class="has-normal-font-size">
+<li>he <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">likes people</mark></strong> and enjoys interacting with them. People can see through fake smiles and fake interest, and they need to feel you are genuinely concerned to build that trust relationship.</li>
+<li>he takes care with his <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">appearance</mark></strong>: clothing, body odor, cleanliness, movements, facial expressions. He adapts all these factors to the target (using information that was gathered about their preferences). Also, “if a person is not comfortable with himself, others will not be comfortable with him either.&#8221;</li>
+<li>he&#8217;s a <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">good listener</mark></strong>. He realizes a major difference exists between <em>hearing</em> and <em>listening</em>. It&#8217;s commonly believed that people retain much less than 50% of what they hear. <br>He <strong>pays attention</strong>, does not fiddle with the phone or other gadget, <strong>does not interrupt</strong>, and tries hard <strong>not to think ahead and plan his next response</strong>. If you are planning your next response, you will not be focused, and you may miss something important, or give the target the impression you don’t really care.<br>He doesn&#8217;t forget to <strong>smile</strong> and <strong>provide proof</strong> that he&#8217;s listening, by nodding (once in a while) and rephrasing some of the ideas of the target.<br>He <strong>doesn&#8217;t always let his personal beliefs and experiences filter the message</strong> coming his way. If he does that, he may not truly &#8220;hear&#8221; what the speaker is saying.</li>
+<li>he <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">keeps the conversation off himself</mark></strong>. We all love to talk about ourselves &#8211; it is human nature. So, he lets the target talk about herself until she gets tired of it (you&#8217;d amazed at how much information they release); he&#8217;ll be deemed an &#8220;amazing friend&#8221;, &#8220;a “perfect husband&#8221;, or whatever title he&#8217;s seeking.</li>
+<li>he tries to <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">identify and understand the underlying emotions</mark></strong>, then uses reflection skills to make the person feel as if he&#8217;s really in tune with him. Nothing builds rapport more than when people feel like <strong>you</strong> “<strong>get them</strong>.”</li>
+<li>he&#8217;s <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">curious</mark></strong> and he has a strong <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">general knowledge</mark></strong>. <em>Knowledge is power</em>, right? It makes you interesting and gives you something to base a conversation on. Also, when you become curious about others’ lifestyles, cultures, and languages <strong>you begin to understand what makes people &#8216;tick&#8217;</strong>.</li>
+<li>he&#8217;s <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">open minded</mark></strong> enough to look into another&#8217;s thoughts on a topic, even if those thoughts differ from his. This keeps you from being rigid and unbending in your personal judgments. You may not personally agree with certain topics, beliefs, or actions but if you can remain nonjudgmental, then you can approach a person by trying to understand why he is, acts, or portrays a certain way.</li>
+<li>he finds ways to <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">meet any of the 4 fundamental psychological needs</mark></strong> for humans (stated by <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/William_Glasser" data-type="URL" data-id="https://en.wikipedia.org/wiki/William_Glasser" target="_blank">Dr. William Glasser</a>): <br>&#8211;  belonging/connecting/love<br>&#8211;  power/significance/competence<br>&#8211;  freedom/responsibility<br>&#8211;  fun/learning<br>If you can create an environment to provide those needs for people, you can create bonds that are <strong>unbreakable</strong>. You just have to look at how successful social media platforms have become, and how hard it is to let them go. It&#8217;s because they are environments that mainly satisfy needs like <strong><em>belonging/connecting</em></strong> and <strong><em>fun</em></strong>.</li>
+</ul>
+
+
+
+<p class="has-normal-font-size">Using these rapport-building techniques as well as matching energy levels, facial expressions, and the like, he can build strong rapport on a <strong>subliminal level</strong>.</p>
+
+
+
+<p class="has-eighty-black-background-color has-background has-small-font-size">Let&#8217;s take a <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-dark-yellow-color">police interrogation example</mark> that proves this point about the <strong>power of rapport</strong> to make people comply with requests. The officers had arrested a man who was a <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">peeping tom</mark>. He had a fetish where he loved to invade the privacy of women who wore pink cowboy boots. The agent, instead of judging him for the freak he is, used phrases like, “<em>I like the red ones myself</em>,” and “<em>I saw this girl the other day wearing short shorts and high cowboy boots, wow!</em>” After just a short time he began to relax. Why? He was <strong>among like-minded people</strong>. He <strong>felt</strong> <strong>connected, part of the crowd</strong>. Their comments put him at ease and he began to spill his guts about his “habits.”</p>
+
+
+
+<h3>⚠️<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">The Human</mark> Buffer Overflow</h3>
+
+
+
+<p class="has-normal-font-size"><em>Buffer overflow</em> is a well known vulnerability in the world of <strong>software</strong> security. Simply put, a <em>buffer</em> is a space (usually of fixed size) given for something to happen or to hold data. <br>If the program <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">does not properly check</mark> the &#8216;limits&#8217; of a <em>buffer</em>, a hacker can overload it with data until the program <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">crashes</mark>, or, a part of that data <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">fills a memory zone <strong>next to</strong> that buffer</mark>. If that adjacent memory zone happens to be a place where the program <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">looks for instructions</mark> to execute, then it can execute instructions given by the hacker. <a rel="noreferrer noopener" href="https://www.slanglang.net/memes/big-oof/" data-type="URL" data-id="https://www.slanglang.net/memes/big-oof/" target="_blank">Oof</a>.</p>
+
+
+
+<p class="has-normal-font-size">Well, it looks like this can also be applied to the human mind. If a certain dataset does not fit the space we have for it, what happens? Unlike a computer, your brain doesn’t crash, but <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">it does open up a momentary gap that allows for a command to be injected</mark> so the brain can be told what to do with the extra data. </p>
+
+
+
+<p class="has-eighty-black-background-color has-background has-small-font-size">The <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-white-color">simplest example</mark></strong> of this is having color names written using another color. We&#8217;ve all been through this:  <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-bright-pink-color">YELLOW</mark> <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-medium-gray-color">BLUE</mark> <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">ORANGE</mark> <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-dark-blue-color">BLACK</mark> <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-gray-color">RED</mark> <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-white-color">GREEN</mark> <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-dark-yellow-color">PURPLE</mark> <mark style="background-color:rgba(0, 0, 0, 0);color:#149414" class="has-inline-color">YELLOW</mark> <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-bright-pink-color">GREY</mark> <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">GREEN</mark>. As fast as you can, try to read the <strong><em>color</em></strong> of the word, <strong>not</strong> what the word spells. <br>After a couple of fast reads and struggles (which means a lot of data to process at once) you&#8217;ll <strong>read the word and not the color</strong>. The data &#8216;overflow&#8217; made the command injection possible, as our mind is <strong>not</strong> good at concentrating on 2 things at the same time.</p>
+
+
+
+<p class="has-normal-font-size">Social engineers understand how we make decisions in life, in order to perform such buffer overflows. People make most of their decisions <strong>subconsciously</strong>, including how to drive to work, get coffee, brush their teeth, and what clothes to wear without really thinking about it. The goal is to bypass the &#8220;<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">firewall</mark>&#8221; (the conscious mind) and gain access directly to the &#8220;<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">root of the system</mark>&#8221; (the subconscious). This is done with <strong><em><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Embedded Commands</mark></em></strong>, which are usually <strong>short</strong> (3 or 4 words), <strong>hidden in normal sentences</strong>, and <strong>accompanied by facial/body language</strong>. <br><strong>Examples</strong>: In marketing / commercials, some<strong> information</strong> is presented first (studies, reviews, functionalities etc.). This information is usually <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">intriguing</mark></strong> and <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">stimulates the imagination</mark></strong> of the target, thus, the <strong><em>conscious mind</em> stops</strong> to process it. This is quickly followed by words like: &#8220;Buy now!&#8221;, “Act now!”, “Follow me!” (<em>the <strong>commands</strong></em>, targeting the subconscious).</p>
+
+
+
+<p class="has-normal-font-size"><strong>When</strong> a social engineer applies this method <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">directly</mark> (i.e. live, during dialog),<strong> while</strong> <strong>the conscious</strong> mind is connecting the dots, so to speak, the <strong>unconscious</strong> mind has little option but to <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">comply</mark> if an embedded command exists. </p>
+
+
+
+<p class="has-eighty-black-background-color has-background has-small-font-size">An <strong>example</strong> (<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-dark-blue-color">from personal experience</mark>) is the scammer from big cities (<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-dark-blue-color">I found this one in Rome, he was from Africa</mark>) who builds rapport with random tourists and gives them bracelets (apparently for free). But, when the tourist tries to leave, this &#8220;friendly guy&#8221; becomes serious, and starts telling emotional stories about how his family struggles to live, demanding some money &#8220;to help them&#8221;. Because the tourist was given the bracelet, he&#8217;ll most likely feel that he needs to give something in return (there also a fear of &#8216;bad vibes&#8217;). So, instead of giving the bracelet back (which, btw, the scammer refuses to take back), the tourist takes his money out (<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">the worst mistake you can make in this context</mark>). <br>Up to this point, there&#8217;s no <em>buffer overflow</em>, but now, when this scammer sees the (not so modest) amount of cash you have, he decides to go for this <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">dirty </mark>technique. If the tourist tries to hand him a small bill (only 5€ let&#8217;s say), he quickly takes his money out, and starts to talk a lot of words in a very broken English, from which only the word &#8216;<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">change</mark>&#8216; can be understood. While holding his money, he continuously repeats these words, faster and faster (this is the data that overflows your <em>conscious</em> mind &#8211; you start thinking what the hell is he actually saying), and among them, the only word you can somehow discern is still &#8216;<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">change</mark>&#8216; (<strong>the command to be injected</strong>). So, guess what: you&#8217;ll take out a much bigger bill and you&#8217;ll hand it to him, thinking that he only wants to change the money <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-gray-color">(changing money is a well known, familiar &amp; legit procedure to our subconscious)</mark>&#8230; He takes it, and gives you only a much smaller bill in return (that is, if you&#8217;re lucky). And that&#8217;s it. He&#8217;ll continue with the same broken English, while getting away from there, leaving the tourist still processing the situation. <br>Believe it or not, they make enough money to live a decent life (for some time) with this stupid trick, in big cities (Paris, Rome, Barcelona, Lisbon a.s.o.). However, there&#8217;s people who play with these scammers, to harass them back, like <a rel="noreferrer noopener" href="https://youtu.be/wxjM2fcHmS8" data-type="URL" data-id="https://youtu.be/wxjM2fcHmS8" target="_blank">this guy</a>. Sometimes, catching them becomes fun :)) .</p>
+
+
+
+<h3>😉<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Influence</mark>: the power of persuasion</h3>
+
+
+
+<p class="has-normal-font-size">This is the process of getting someone else to <em><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">want</mark></em> to do, react, think, or believe in the way <em>you</em> want them to. True influence is <em>elegant</em> and <em>smooth</em>, and most of the time undetectable to those being influenced. After reading this section, you&#8217;ll start to get irritated at the shoddy attempts of marketing people and, if you are like me, you will begin to rant and rave at terrible commercials and billboards (they are fuckin&#8217; everywhere).</p>
+
+
+
+<p class="has-normal-font-size">Let&#8217;s take a look at some <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">influence tactics</mark>, shall we?</p>
+
+
+
+<h4><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Reciprocation</mark></h4>
+
+
+
+<p class="has-normal-font-size">It&#8217;s the simple principle of &#8220;you do something for me, I do something for you&#8221;. Simple <strong>example</strong>: I hold the door open for you first, and most likely you&#8217;ll hold the next door open for me. This rule is important because often the returned favor is <strong>done</strong> <strong>unconsciously</strong>, and it is seen as part of the moral codes.<br>Politicians are influenced in much the same way. It is no secret that many times politicians or lobbyists are more favorable to people who helped their political campaign than those who did not.</p>
+
+
+
+<p class="has-normal-font-size">Social engineers give something away, and that thing must have value &#8211; to the recipient. The more value the gift has and the more unexpected it is, the greater the sense of indebtedness.</p>
+
+
+
+<p class="has-eighty-black-background-color has-background has-small-font-size">An<strong> example</strong> is, of course, negotiation. The seller starts with a big price, the buyer with a much smaller offer. <strong>Gradually</strong>, each of them gives up a part of the possible earning, <strong>one by one</strong>, until they reach a deal (reciprocation/concession: if the seller dropped the price this much for me, I can give him a little more).<br>Children can use this trick when demanding money from the parents. If they need 5€, but they start by asking for 30, then 20, it is more likely they&#8217;ll end up with 5 or even 10. </p>
+
+
+
+<h4><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Scarcity</mark></h4>
+
+
+
+<p class="has-normal-font-size">People often find objects and opportunities more attractive if they are<strong> rare</strong>, scarce, or hard to obtain. This is why you will see ads filled with “<strong>Last Day</strong>”, “<strong>Limited Time Only</strong>”, “<strong>Only 3-Day Sale</strong>”, &#8220;<strong>The first X users will get Y discount</strong>&#8221;  and “<strong>Going Out of Business Forever</strong>” messages that entice people to get a share of the soon-to-be-never-seen-again product. In economy, the rarer the resource, the higher the perceived value the object retains (e.g., gold). Social events can often appear to be more exclusive if scarcity is introduced. <br>Some <strong>dating</strong> advice for men is based on this concept as well. One might act like he&#8217;s very busy on a regular basis, and free time is hard to come by. For this reason (especially if he&#8217;s built a good reputation), this man can be seen as of high value. In lots of cases, women feel much more attracted to this kind of man, also because he <strong>does not </strong>give them <em><strong>attention</strong></em> or <em><strong>validation</strong></em>, like the <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-bright-pink-color">majority</mark></strong> of men do (by approaching &amp; flirting with them). So, in order to get her <strong>validation </strong>from this man as well, an <em>attractive</em> woman will most likely do the 1<sup>st</sup> step in the game of seduction. <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-gray-color">From personal experience, I can tell you that this is some pretty good advice, but it requires a lot of self control, self love, and self confidence.</mark><br>For a social engineer, using scarcity mixed with other principles can also make the attack even deadlier. Either way, <strong>scarcity creates a desire</strong> and that desire can lead someone to making a decision he might regret later.</p>
+
+
+
+<h4><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Authority</mark></h4>
+
+
+
+<p class="has-normal-font-size">People are more willing to follow the directions or recommendations of someone they view as an authority. Therefore, social engineers may impersonate persons with:<br>&#8211;  <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">legal</mark> authority: law enforcement, security guards, lawyers;<br>&#8211;  <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">organizational</mark> authority: CIO or acting as sent or authorized by the CFO;<br>&#8211;  <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">social</mark> authority: refers to &#8216;natural-born leaders&#8217; of any social group. In Western countries, there are 3 <em>authority symbols</em> : titles, clothes, automobiles. Using the right combination of these and an <strong>assertive</strong> attitude when approaching the target, a social engineer can easily <strong>intimidate</strong> him/her. </p>
+
+
+
+<p class="has-eighty-black-background-color has-background has-small-font-size"><strong>Example</strong>: in <a rel="noreferrer noopener" href="https://youtu.be/qHTgt82ZGPM?t=1080" data-type="URL" target="_blank">the BOR Recorder investigation</a>, an <strong>expensive car</strong> (w/ the clothing) gives the &#8216;<strong>respected</strong>&#8216; status to the undercover journalist, whose pretext is a politician who wants to do business with the church.</p>
+
+
+
+<h4><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Commitment &amp; Consistency</mark></h4>
+
+
+
+<p class="has-normal-font-size">People value consistency in others, and they also want to appear consistent in their own behavior. If a social engineer can get a target to commit to something small (an act or a simple “yes”), usually escalating the commitment is not too hard. <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Robert_Cialdini" data-type="URL" data-id="https://en.wikipedia.org/wiki/Robert_Cialdini" target="_blank">Robert Cialdini</a> states: &#8220;(&#8230;) once we make a decision, we will experience pressure from others and ourselves to behave consistently with that decision. You can be pressured into making either good or bad decisions depending on your past actions&#8221;.</p>
+
+
+
+<p class="has-eighty-black-background-color has-background has-small-font-size">Simple <strong>example</strong> &#8211;  a phone conversation often used by solicitors goes something like this: <br>“Hello, how are you today?” You answer, “I am doing great.” Now, the exploit: “That is good to hear, because some people who are not doing so great can use your help.” <br>You can’t really go back on what you said now, because you are still doing great and committed to it.</p>
+
+
+
+<p class="has-normal-font-size">Being aware that it is okay to say “<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">no</mark>” can save you from committing to something that could be disastrous. Yet sometimes we convince ourselves that saying “no” is some form of cardinal sin that needs many prayers to be forgiven.</p>
+
+
+
+<h4><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Liking</mark></h4>
+
+
+
+<p class="has-normal-font-size">Other than making themselves liked at the psychological level, social engineers take into consideration their <strong>physical attractiveness</strong> as well. Humans tend to automatically “like” those who we find attractive. As vain as that sounds, it is the truth. Some serious psychological principles back up this idea.</p>
+
+
+
+<p class="has-normal-font-size">The “<a rel="noreferrer noopener" href="https://psycnet.apa.org/record/1973-09160-001" data-type="URL" data-id="https://psycnet.apa.org/record/1973-09160-001" target="_blank">What Is Beautiful Is Good</a>” study proved that people tend to link beauty with other successful qualities and it<strong> alters their opinions and ability to trust</strong> someone. This effect is often used in marketing. <em>Beautiful</em> people are given products to drink, eat, and wear, and other people will automatically assume these things are good.</p>
+
+
+
+<p class="has-normal-font-size">A good social engineer knows the target (how does he dress, what does he consider bad and good) so he/she can successfully <strong>look</strong> the way the target would expect. The social engineer will project a <strong>confident and positive</strong> attitude, will <strong>look for things to compliment</strong> people on, and will wear clothing, hairstyles, jewelry, makeup that won&#8217;t shock, surprise, or disgust anyone. <br><strong>Smart compliments</strong> tend to reinforce a target’s self image, making him feel as if you have a greater-than-normal understanding of him.</p>
+
+
+
+<h4><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Consensus / Social Proof</mark></h4>
+
+
+
+<p class="has-normal-font-size">Social proof is a psychological phenomenon that occurs in social situations when people are unable to determine the appropriate mode of behavior.</p>
+
+
+
+<p class="has-eighty-black-background-color has-background has-small-font-size"><a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Robert_Cialdini" data-type="URL" data-id="https://en.wikipedia.org/wiki/Robert_Cialdini" target="_blank">Dr. Robert Cialdini</a> states in one of his books: “Social proof—people will do things that they see other people are doing. For example, in one experiment, one or more confederates would look up into the sky; bystanders would then look up into the sky to see what they were seeing. At one point this experiment is aborted, as so many people were looking up that they stopped traffic.”<br>“One means we use to determine what is correct is to find out what other people think is correct…<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">We view a behavior as more correct in a given situation to the degree that we see others performing it</mark>.”</p>
+
+
+
+<p class="has-normal-font-size">Social proof is not just influenced by large groups, but also by <strong>high-profile individuals</strong>. For instance, a single celebrity becoming associated with a product will make others want to be associated with the celebrity’s positive traits, and they will then use the same product.</p>
+
+
+
+<p class="has-normal-font-size">A social engineer uses this principle to stimulate a person’s compliance with a request by informing him or her that <strong>many other individuals</strong>, perhaps some who are role models, took the action or behavior you are trying to get this person to do. He uses social proof <strong>under 2 conditions</strong>: <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">uncertainty </mark>(when people are unsure and the situation is ambiguous, they are more likely to observe the behavior of others and accept that as being correct) and <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">similarity</mark> (people are more inclined to follow the lead of others who are similar to themselves).</p>
+
+
+
+<h3>🏞️<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Altering</mark> Reality: Framing</h3>
+
+
+
+<p class="has-normal-font-size"><strong>Framing</strong> is your own personal experiences and the experiences of others that you allow into your conscious mind to alter the way you make decisions. Basically, anything that can alter people’s perceptions can be called framing.</p>
+
+
+
+<p class="has-normal-font-size">You can see simple examples of this when inspecting grocery store products. On many of them it&#8217;s written that they contain <strong>25%</strong> of some <em>good stuff</em> instead of <strong>75%</strong> of the <em>bad stuff</em>.<br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Simply presenting the facts in a different way can make something that would normally be considered bad,seem good.</mark> Hence, framing has long been used in politics.</p>
+
+
+
+<p class="has-normal-font-size">Our minds are designed to not like “clutter” or chaos. When presented with<strong><em> frames </em></strong>that are cluttered (e.g. images with optical illusions), our brains will try to make order out of them. Your mind will insist on finding familiar patterns in things. We do it in clouds, space, and inanimate objects. Humans also tend to see faces in these things. <strong>Example</strong> &#8211; just take a look at texts like this: <em>O lny srmat poelpe can raed tihs.</em> The fact that you easily read it has to do with the brain trying to make order out of chaos, by default.</p>
+
+
+
+<p class="has-normal-font-size">Many times <strong>companies will use subtle measures of framing to plant an idea</strong>. They know that logic convinces someone an action is good to take, but <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">emotion</mark></strong> is what makes the action happen.</p>
+
+
+
+<p class="has-eighty-black-background-color has-background has-small-font-size">E.g. in logos: in the <strong>FedEx</strong> logo you can also see an arrow (frame between &#8216;E&#8217; and &#8216;x&#8217;); in the <strong>Amazon</strong> logo, the arrow can be seen as a smile, which connects &#8216;a&#8217; to &#8216;z&#8217; (the frame is that Amazon has everything, and it makes you happy).<br>In an <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">expensive clothing store</mark></strong>—when you walk in, everything is hung neatly, pressed, and perfect. The items are <strong>evenly spaced</strong> and in <strong>little amount</strong>. The perception can be that the clothing is worth the exorbitant price.</p>
+
+
+
+<p class="has-normal-font-size">Social engineers know that a frame is a <strong>conceptual structure</strong> that our minds use in thinking. So, their goal is either to <strong>create a new frame</strong>, <strong>align with a person’s frame</strong>, or <strong>bring the target into their frame</strong>. However, people tend to overlook frames or proposed frames if a link does not exist to a <strong>core belief</strong> or a <strong>value</strong> of their belief system.</p>
+
+
+
+<p class="has-eighty-black-background-color has-background has-small-font-size">E.g.: <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">Vladimir Putin</mark>&#8216;s regime frame about Ukraine. It&#8217;s strongly connected to events of <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/World_War_II" data-type="URL" data-id="https://en.wikipedia.org/wiki/World_War_II" target="_blank">WW2</a> when Russians fought &amp; defeated the <strong><a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Nazi_Germany" data-type="URL" data-id="https://en.wikipedia.org/wiki/Nazi_Germany" target="_blank">Nazis</a></strong> (in their attempt to conquer some of Russia), who were seen as the <strong>worst people on the planet </strong>(there were reasons for that ofc). Since then, this win is a <strong>crucial event</strong> for Russia (even transformed in <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">propaganda</mark>) and is intensively thought as one of the most important history lessons in Russian schools. Now, because defeating Nazis turned into a<strong> national <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">value/core belief</mark></strong> there, the frame that Ukraine has to be &#8220;eliberated&#8221; and &#8220;de-nazificated&#8221; is used by Putin, and, if you pay close attention, there still are a lot of Russians who <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">believe him</mark>.</p>
+
+
+
+<p class="has-normal-font-size">Because our minds work by picturing things, social engineers use words which are descriptive and robust (&#8220;imagine <em>this</em> and <em>that</em>&#8220;). They deliver stories that cause the target to picture the frame they want, while involving him emotionally. After planting the idea, they may repeatedly cause the target to think about the frame, as this reinforces it tremendously.</p>
+
+
+
+<p class="has-normal-font-size">You can learn a lot from looking at how <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">media</mark> utilizes this skill. By using omissions, or leaving out details of a story or the whole story itself, the media can lead people to a conclusion that seems like their own, but really is the media’s. This method is effective because it <strong>bends the truth</strong> but not so much that it becomes false, so it remains believable.</p>
+
+
+
+<h3>😈<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Manipulation</mark>: Controlling Your Target</h3>
+
+
+
+<p class="has-normal-font-size">The aim of manipulation is to overcome the <strong>critical thinking</strong> and <strong>free will</strong> of the target. The social engineer doesn’t want to alert the target he is being manipulated. <br>Some of the following methods may be very controversial and downright horrible, but they are used each day by scammers, identity thieves, and the like. One of the goals can be to create <strong>anxiety</strong>, stress, and undue <strong>social pressure</strong>. When a target feels that way he is more likely to take an action that you want him to take.</p>
+
+
+
+<p class="has-eighty-black-background-color has-background has-small-font-size">Simple but innocent <strong>example</strong>: <strong>diverting the target’s attention</strong> to something other than the problem at hand can give you enough time to finish your job (until he realizes what is actually happening). For instance, if you are caught by a security guard, <strong>instead of getting nervous</strong>, you could simply look at him with confidence and say: “Do you know what I am doing here? Did you hear that some USB keys have been lost with very important data on them? It is imperative we find them before everyone comes in tomorrow. Do you want to check the bathrooms?”</p>
+
+
+
+<p class="has-normal-font-size">Manipulation is used in <strong>6 ways</strong> that hold true whether the topic is brainwashing or something less insidious. You shouldn&#8217;t fancy the details, but I know you want them. Here you are.</p>
+
+
+
+<ol class="has-normal-font-size">
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">Increasing the suggestibility </mark>(i.e. the desire to cooperate)<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color"> of the target</mark>. It can involve using NLP skills (discussed previously) or other visual cues. A social engineer can make sure the whole setup is geared towards his target &#8211; the phrases used, the word pictures painted, the clothing <a rel="noreferrer noopener" href="https://www.verywellmind.com/color-psychology-2795824" data-type="URL" data-id="https://www.verywellmind.com/color-psychology-2795824" target="_blank">colors</a> chosen to wear. Knowing his <em>likes</em>, <em>dislikes</em>, <em>kids’ names</em>, <em>favorite teams</em>, and <em>favorite foods</em>, and then using this to create an <strong>emotional environment</strong> will bring great results. At its most extreme, sleep or food deprivation increases suggestibility the fastest.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">Gaining control over the target’s environment</mark>. Can involve everything from <strong>controlling the type and quantity of information</strong> to which a target has access, to much subtler things like gaining access to a target’s social media websites. Being able to use <strong>social networks</strong> to find out what triggers they have is a powerful skill.<br>Good social engineers locate the target&#8217;s social circles, whether online or in the real world, and spend time planning how to get in and control that environment. <em>How?</em> Well, they again take time to <strong>build relationships</strong> in there, and <strong>gather information</strong> before the final blow is administered.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">Creating doubt</mark>/ forcing the target to reevaluate. This one is very <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">negative</mark> because it&#8217;s used to make someone doubt what he/she has been told (most probably for years) to be <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">true</mark>. It&#8217;s basically destabilizing and undermining his/her belief system. <br>A manipulator makes his victim question the rules they follow, their job, or any other belief, in order to affect her ability to make rational decisions. <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">Cults</mark></strong> use this tactic to prey upon those looking for guidance through life. Many times, people who feel lost or confused are convinced that their whole belief system needs to be reevaluated. When the cults have control they can be so credible that the victims can be thoroughly convinced that their family and friends do not know what is best (e.g., in recent years we&#8217;ve seen <a rel="noreferrer noopener" href="https://www.visionofhumanity.org/can-economic-conditions-explain-flow-foreign-fighters-isis/" data-type="URL" data-id="https://www.visionofhumanity.org/can-economic-conditions-explain-flow-foreign-fighters-isis/" target="_blank">people leaving civilized countries to join ISIS</a>). <br>Social engineers usually apply this concept by <strong>presenting well-thought-out questions</strong> that can cause the target to reevaluate his stand on a topic and cause him to falter.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">Creating a sense of powerlessness</mark>. Very dark, but effective tactic. <br>To make a target feel a lack of confidence in her convictions, a social engineer presents &#8220;facts&#8221; he &#8220;received&#8221; from someone with authority, known by the victim. On the other hand, if his pretext is someone with power, he can act angry by the <strong>lack of response</strong> or the inability of the target to give <strong>quick answers</strong>. In this context, the social engineer also threatens his victim, causing her to doubt her position and feel loss of power. If the victim cannot take time to think about how to handle a problem, she must take a decision in a way she knows she shouldn&#8217;t. </li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">Creating strong emotional responses in the target</mark>. That includes everything from doubt to guilt to humiliation and more. <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">If the feelings are intense enough, they can cause the target to alter their whole belief system.</mark> <br>Social engineers usually create an emotional response based on <strong>fear</strong>, <strong>loss</strong>, or <strong>punishment</strong>. In that context, a target might possibly do anything to &#8220;regain favor&#8221;.</li>
+<li>
+<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-red-color">Heavy intimidation</mark>. Of course, fear of physical pain or other dire circumstances can be used to make a target crack under pressure. Social engineers <strong>won&#8217;t</strong> <strong>go</strong> this route unless they are using corporate espionage as a tactic. They&#8217;ll use perceived authority to build strong fear and feelings of potential loss, by suggesting that failure to comply can lead to being laid off or other adverse consequences.<br>Looking busy, upset, and on a mission can intimidate many. Talking with very authoritative expressions can also intimidate people.<br>An <strong>experienced</strong> social engineer does not allow his emotions to get involved, and always <strong>assumes</strong> that the target will act the way he wants (by answering the way he wants, by granting all his requests). He knows that assuming what he wants will occur is a strong point, because it affects his <strong>mental outlook</strong>. <strong>The belief that you&#8217;ll get what you came for will create a new body language and facial expressions that will feed your pretext perfectly</strong>.</li>
+</ol>
+
+
+
+<p class="has-normal-font-size">But, how about using <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-bright-pink-color">positive manipulation</mark></strong>? <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">The difference is that the target doesn&#8217;t need therapy when you are done</mark> 🙂 . This is useful in educating children, in convincing people to stop smoking or in making someone take up a good habit.</p>
+
+
+
+<h3>🏁<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Concluding</mark> remarks</h3>
+
+
+
+<p class="has-normal-font-size">Let&#8217;s finish with some critical points about why <strong>all</strong> this <em>madness</em> usually works.</p>
+
+
+
+<ul class="has-normal-font-size">
+<li>people are designed to be <strong>trusting</strong>, to have levels of <strong>compassion</strong>, <strong>empathy</strong>, and a <strong>desire to help</strong> others</li>
+<li>most of us are not aware or do <strong>not realize the scale</strong> of the danger. <mark style="background-color:rgba(0, 0, 0, 0);color:#149414" class="has-inline-color">Only when you know how the “criminal” thinks, and only when you are ready to look that evil in the eye and embrace it, can you truly protect yourself.</mark>
+</li>
+<li>you can throw money into intrusion detection systems, firewalls, antivirus programs, and other solutions to maintain perimeter security. With social engineering no software systems exist that you can attach to your employees or yourself to remain secure.</li>
+<li>
+<strong>companies tend to fear change</strong>. That&#8217;s why many of them fall behind with software updates and even mindset updates.</li>
+<li>when information is perceived as having no or little value, then little effort is placed on protecting it. You must <strong>realize the value</strong> of the data that you have and be aware of a tactic a social engineer might use <strong>to reduce the value</strong> <strong>of this information in your eyes</strong>.</li>
+</ul>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:33.33%">
+<hr class="wp-block-separator">
+
+
+
+<p class="has-text-align-right has-small-font-size">In the end, I&#8217;ll leave you with one of the most &#8216;fun&#8217; Social Engineering presentations out there.<br> <br><em>Good luck.</em></p>
+</div>
+
+
+
+<div class="wp-block-column" style="flex-basis:66.66%">
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" title="TEDxSanAntonio - Brian Brushwood - Social Engineering - How to Scam Your Way into Anything" width="1440" height="810" src="https://www.youtube.com/embed/yY-lMkeZVuY?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></figure>
+</div>
+</div>
+
+
+
+<p class="has-text-align-center has-extra-small-font-size">Publications used for this article:<br><br><em>Social Engineering: The Art of Human Hacking</em> &#8211; Christopher Hadnagy<br>www.social-engineer.com</p>
+	</div>
+<!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<div class="entry-meta">
+			<span class="cat-links"><span class="screen-reader-text">Categories</span><a href="/category/information-security/" rel="category tag">Information security</a></span><span class="tags-links"><span class="screen-reader-text">Tags,</span><a href="/tag/manipulation/" rel="tag">#manipulation</a> <a href="/tag/socialengineering/" rel="tag">#SocialEngineering</a></span>		</div>
+<!-- .entry-meta -->
+
+			</footer><!-- .entry-footer -->
+</article><!-- #post-354 -->
+
+	<nav class="navigation post-navigation" aria-label="Posts">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="/2022/02/28/vital-urban-warfare-knowledge/" rel="prev"><span class="screen-reader-text">Previous Post</span><span aria-hidden="true" class="nav-subtitle">Prev Post</span> <span class="nav-title">Vital urban warfare knowledge</span></a></div></div>
+	</nav>			</div>
+<!-- .singular-content-wrap -->
+		</main><!-- #main -->
+	</div>
+<!-- #primary -->
+
+		</div>
+<!-- .wrapper -->
+	</div>
+<!-- #content -->
+
+	<footer id="colophon" class="site-footer">
+		
+		
+
+<aside class="widget-area footer-widget-area two" role="complementary">
+	<div class="wrapper">
+					<div class="widget-column footer-widget-1">
+				<section id="block-32" class="widget widget_block"> <div class="widget-wrap">
+<h1 class="has-text-align-left"><strong>Music corner</strong></h1>
+</div></section><section id="block-36" class="widget widget_block"> <div class="widget-wrap">
+<figure class="wp-block-embed is-type-rich is-provider-spotify wp-block-embed-spotify wp-embed-aspect-21-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" title="Spotify Embed: A new dimension" style="border-radius: 12px" width="100%" height="380" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" src="https://open.spotify.com/embed/playlist/3vebjKDMvjL1UhGIDBFYdy?si=8c927bd5307f4174&utm_source=oembed"></iframe>
+</div></figure>
+</div></section>			</div>
+<!-- .widget-area -->
+		
+		
+					<div class="widget-column footer-widget-3">
+				<section id="block-49" class="widget widget_block"> <div class="widget-wrap">
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" title="Apashe - Renaissance 2.0 With Live Orchestra #VALOTF" width="1440" height="810" src="https://www.youtube.com/embed/xpWIdf-tCFc?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></figure>
+</div></section>			</div>
+<!-- .widget-area -->
+		
+		
+		
+
+	</div>
+<!-- .footer-widgets-wrapper -->
+</aside><!-- .footer-widgets -->
+
+
+		<div id="site-generator">
+			
+	<div id="footer-menu-section" class="site-footer-menu">
+		<div class="wrapper">
+
+							<nav id="social-footer-navigation" class="social-navigation" role="navigation" aria-label="Footer Social Links Menu">
+					<div class="menu-social-container"><ul id="menu-social" class="social-links-menu">
+<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56"><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/stefancristianmihalache/"><span>Linkedin</span></a></li>
+<li id="menu-item-62" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-62"><a href="https://github.com/StefanCsPurge"><span>Github</span></a></li>
+<li id="menu-item-54" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54"><a target="_blank" rel="noopener" href="https://www.instagram.com/m_stefan_c/"><span>Instagram</span></a></li>
+<li id="menu-item-55" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55"><a target="_blank" rel="noopener" href="https://www.facebook.com/mihalache.stefan.cristi/"><span>Facebook</span></a></li>
+</ul></div>				</nav><!-- .social-navigation -->
+					</div>
+<!-- .wrapper -->
+	</div>
+<!-- #footer-menu-section -->
+
+			
+<div class="site-info"><div class="wrapper">
+<a href="https://hits.seeyoufarm.com/"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fmstefanc.com&amp;count_bg=%23008000&amp;title_bg=%23808080&amp;icon=gnubash.svg&amp;icon_color=%2398EB81&amp;title=hits&amp;edge_flat=false"></a>
+<br> <br>
+Copyright © 2022 <a href="/">M. Ștefan Cristian</a> <span class="sep"> | </span>Signify Dark&nbsp;by&nbsp;<a target="_blank" href="https://wenthemes.com/">WEN Themes</a>
+</div></div>
+<!-- .site-info -->		</div>
+<!-- #site-generator -->
+	</footer><!-- #colophon -->
+	
+</div>
+<!-- #page -->
+
+<a href="#masthead" id="scrollup" class="backtotop"><span class="screen-reader-text">Scroll Up</span></a><script type="text/javascript" src="/wp-content/themes/signify/js/skip-link-focus-fix.min.js?ver=201800703" id="signify-skip-link-focus-fix-js"></script>
+<script type="text/javascript" id="signify-script-js-extra">
+/* <![CDATA[ */
+var signifyOptions = {"screenReaderText":{"expand":"expand child menu","collapse":"collapse child menu"},"rtl":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/signify/js/functions.min.js?ver=201800703" id="signify-script-js"></script>
+
+</body>
+</html>
