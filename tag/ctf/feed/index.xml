@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>#CTF &#8211; M. Ștefan Cristian</title>
+	<atom:link href="/tag/ctf/feed/" rel="self" type="application/rss+xml" />
+	<link></link>
+	<description>Technology &#38; Information Security Enthusiast</description>
+	<lastBuildDate>Sun, 08 May 2022 22:52:45 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>/wp-content/uploads/2021/10/icon.png</url>
+	<title>#CTF &#8211; M. Ștefan Cristian</title>
+	<link></link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>UNbreakable CTF 2022 (individual) Writeups</title>
+		<link>/2022/05/08/unbreakable-ctf-2022-individual-writeups/</link>
+		
+		<dc:creator><![CDATA[spurge]]></dc:creator>
+		<pubDate>Sun, 08 May 2022 22:52:45 +0000</pubDate>
+				<category><![CDATA[Information security]]></category>
+		<category><![CDATA[#CTF]]></category>
+		<category><![CDATA[vulnerability]]></category>
+		<guid isPermaLink="false">/?p=609</guid>
+
+					<description><![CDATA[This contest phase took place between 6th &#8211; 8th of May 2022 and had 165 active participants (from both Romania<p><a href="/2022/05/08/unbreakable-ctf-2022-individual-writeups/" class="more-link">Continue reading<span class="screen-reader-text">UNbreakable CTF 2022 (individual) Writeups</span></a></p>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-cover" style="min-height:463px"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img loading="lazy" width="1250" height="833" class="wp-block-cover__image-background wp-image-612" alt="" src="/wp-content/uploads/2022/05/CTF_img.png" style="object-position:46% 50%" data-object-fit="cover" data-object-position="46% 50%"/><div class="wp-block-cover__inner-container">
+<p class="has-text-align-center has-small-font-size"><code><em>UNR 22</em></code></p>
+</div></div>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<p>This contest phase took place between 6<sup>th</sup> &#8211; 8<sup>th</sup> of May 2022 and had 165 active participants (from both Romania and Republica Moldova).</p>
+
+
+
+<p>I managed to get the <strong>14<sup>th</sup></strong> place, or <strong>10<sup>th</sup></strong> place for my category (university). All the official ranks can be found here: <a rel="noreferrer noopener" href="https://unr22-individual.cyberedu.ro/#ranks" target="_blank">https://unr22-individual.cyberedu.ro/#ranks</a>. <br>Even though this was the <em>individual</em> phase, I have to congratulate my two teammates (and faculty colleagues), <strong>Noria</strong> and <strong>Toma</strong>, who managed to get the <strong>1<sup>st</sup></strong> and <strong>2<sup>nd</sup></strong> place respectively. GG.</p>
+
+
+
+<p>However, even though I had a busy weekend, I still solved <strong>80%</strong> of the given challenges. The writeups can be found below.</p>
+
+
+
+<iframe loading="lazy" width="1999" height="1200" src="https://drive.google.com/file/d/1ssC1KX-Jg0cEWgPpC4RrVFaUtfX0EeWD/preview" allow="autoplay"></iframe>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
