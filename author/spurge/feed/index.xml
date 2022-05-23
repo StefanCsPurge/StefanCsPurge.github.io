@@ -12,7 +12,7 @@
 	<atom:link href="/author/spurge/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description>Technology &#38; Information Security Enthusiast</description>
-	<lastBuildDate>Mon, 23 May 2022 01:43:53 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 23 May 2022 09:44:33 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -42,9 +42,13 @@
 
 					<description><![CDATA[This CTF contest phase took place between 20th &#8211; 22nd of May 2022. We competed against 70 teams (from both<p><a href="/2022/05/23/unbreakable-ctf-2022-teams-writeups/" class="more-link">Continue reading<span class="screen-reader-text">UNbreakable CTF 2022 (teams) Writeups</span></a></p>]]></description>
 										<content:encoded><![CDATA[
-<div class="wp-block-cover has-parallax is-repeated" style="background-image:url(/wp-content/uploads/2022/05/illuminati.png)"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container">
+<div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img loading="lazy" width="2400" height="1370" class="wp-block-cover__image-background wp-image-654" alt="" src="/wp-content/uploads/2022/05/birmingham-museums-trust-5EUh-tq31eA-unsplash-2-overlay-1.png" style="object-position:51% 32%" data-object-fit="cover" data-object-position="51% 32%"/><div class="wp-block-cover__inner-container">
 <p class="has-text-align-center has-small-font-size"><em>UNR 22</em> <br><strong>won.</strong></p>
 </div></div>
+
+
+
+<hr class="wp-block-separator"/>
 
 
 
@@ -56,7 +60,7 @@
 
 
 
-<p><strong>Team </strong><em>‘The Few Chosen’</em> : <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-white-color">Noria, D. Toma, Spurge</mark></strong> <em>(ç&#8217;est moi)</em>, representing the Babeș-Bolyai University.<br>The official national ranks: <a rel="noreferrer noopener" href="https://unr22-echipe.cyberedu.ro/#ranks" data-type="URL" data-id="https://unr22-echipe.cyberedu.ro/#ranks" target="_blank">https://unr22-echipe.cyberedu.ro/#ranks</a>.<br><br>All of our writeups can be found on <a rel="noreferrer noopener" href="https://glacier-acrylic-3f2.notion.site/UNbreakable-Romania-2022-29fa4ed917434de185c0d371cbb7b32a" data-type="URL" data-id="https://glacier-acrylic-3f2.notion.site/UNbreakable-Romania-2022-29fa4ed917434de185c0d371cbb7b32a" target="_blank">Notion</a>, or below.</p>
+<p><strong>Team&nbsp;</strong><em>‘The Few Chosen’</em> :&nbsp;<strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-white-color">Noria, D. Toma, Spurge</mark></strong> <em>(ç&#8217;est moi)</em>, representing the Babeș-Bolyai University.<br>The official national ranks:&nbsp;<a rel="noreferrer noopener" href="https://unr22-echipe.cyberedu.ro/#ranks" data-type="URL" data-id="https://unr22-echipe.cyberedu.ro/#ranks" target="_blank">https://unr22-echipe.cyberedu.ro/#ranks</a>.<br><br>All of our writeups can be found on <a rel="noreferrer noopener" href="https://glacier-acrylic-3f2.notion.site/UNbreakable-Romania-2022-29fa4ed917434de185c0d371cbb7b32a" data-type="URL" data-id="https://glacier-acrylic-3f2.notion.site/UNbreakable-Romania-2022-29fa4ed917434de185c0d371cbb7b32a" target="_blank">Notion</a>, or below.</p>
 
 
 
@@ -69,6 +73,10 @@
 
 
 <hr class="wp-block-separator"/>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full is-resized"><img loading="lazy" src="/wp-content/uploads/2022/05/Diploma_Spurge_teams_UNR22.png" alt="" class="wp-image-649" width="744" height="526"/></figure></div>
 ]]></content:encoded>
 					
 		
