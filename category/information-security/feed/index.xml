@@ -12,7 +12,7 @@
 	<atom:link href="/category/information-security/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description>Technology &#38; Information Security Enthusiast</description>
-	<lastBuildDate>Tue, 10 May 2022 16:08:12 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 23 May 2022 01:43:53 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,53 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>UNbreakable CTF 2022 (teams) Writeups</title>
+		<link>/2022/05/23/unbreakable-ctf-2022-teams-writeups/</link>
+		
+		<dc:creator><![CDATA[spurge]]></dc:creator>
+		<pubDate>Mon, 23 May 2022 01:43:53 +0000</pubDate>
+				<category><![CDATA[Information security]]></category>
+		<category><![CDATA[#CTF]]></category>
+		<category><![CDATA[ctfwriteup]]></category>
+		<category><![CDATA[infosec]]></category>
+		<category><![CDATA[win]]></category>
+		<guid isPermaLink="false">/?p=625</guid>
+
+					<description><![CDATA[This CTF contest phase took place between 20th &#8211; 22nd of May 2022. We competed against 70 teams (from both<p><a href="/2022/05/23/unbreakable-ctf-2022-teams-writeups/" class="more-link">Continue reading<span class="screen-reader-text">UNbreakable CTF 2022 (teams) Writeups</span></a></p>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-cover has-parallax is-repeated" style="background-image:url(/wp-content/uploads/2022/05/illuminati.png)"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container">
+<p class="has-text-align-center has-small-font-size"><em>UNR 22</em> <br><strong>won.</strong></p>
+</div></div>
+
+
+
+<p>This <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)" data-type="URL" data-id="https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)" target="_blank">CTF</a> contest phase took place between 20<sup>th</sup> &#8211; 22<sup>nd</sup> of May 2022. <br>We competed against <strong>70</strong> teams (from both Romania and Republica Moldova).<br>We all had exactly <strong>48</strong> hours to find vulnerabilities &amp; exploit them in <strong>25</strong> challenges (me &amp; my team finished everything in under <strong>33</strong> hours).</p>
+
+
+
+<p>As a <strong>result</strong>, this time, we managed to get the <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color"><strong>1<sup>st</sup></strong> place</mark>  ¯\_(ツ)_/¯ .</p>
+
+
+
+<p><strong>Team </strong><em>‘The Few Chosen’</em> : <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-white-color">Noria, D. Toma, Spurge</mark></strong> <em>(ç&#8217;est moi)</em>, representing the Babeș-Bolyai University.<br>The official national ranks: <a rel="noreferrer noopener" href="https://unr22-echipe.cyberedu.ro/#ranks" data-type="URL" data-id="https://unr22-echipe.cyberedu.ro/#ranks" target="_blank">https://unr22-echipe.cyberedu.ro/#ranks</a>.<br><br>All of our writeups can be found on <a rel="noreferrer noopener" href="https://glacier-acrylic-3f2.notion.site/UNbreakable-Romania-2022-29fa4ed917434de185c0d371cbb7b32a" data-type="URL" data-id="https://glacier-acrylic-3f2.notion.site/UNbreakable-Romania-2022-29fa4ed917434de185c0d371cbb7b32a" target="_blank">Notion</a>, or below.</p>
+
+
+
+<p class="has-normal-font-size"><em>Stay safe*</em>  :&#8217;)</p>
+
+
+
+<iframe loading="lazy" width="1999" height="1200" src="https://drive.google.com/file/d/1MI3-6aSzQSn3JcEc2v_-XRJhCF9gRwGQ/preview" allow="autoplay"></iframe>
+
+
+
+<hr class="wp-block-separator"/>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>UNbreakable CTF 2022 (individual) Writeups</title>
 		<link>/2022/05/08/unbreakable-ctf-2022-individual-writeups/</link>
 		
