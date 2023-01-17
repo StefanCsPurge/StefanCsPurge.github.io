@@ -12,7 +12,7 @@
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description>Technology &#38; Information Security Enthusiast</description>
-	<lastBuildDate>Mon, 23 May 2022 09:44:33 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 17 Jan 2023 20:24:06 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,51 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Executing the Evil Twin Wireless Attack</title>
+		<link>/2023/01/17/executing-the-evil-twin-wireless-attack/</link>
+		
+		<dc:creator><![CDATA[spurge]]></dc:creator>
+		<pubDate>Tue, 17 Jan 2023 20:24:06 +0000</pubDate>
+				<category><![CDATA[Information security]]></category>
+		<category><![CDATA[#EvilTwin]]></category>
+		<category><![CDATA[#WirelessAttack]]></category>
+		<guid isPermaLink="false">/?p=689</guid>
+
+					<description><![CDATA[The following document is one of the case studies we carried out in the 1st semester at the Advanced Cybersecurity<p><a href="/2023/01/17/executing-the-evil-twin-wireless-attack/" class="more-link">Continue reading<span class="screen-reader-text">Executing the Evil Twin Wireless Attack</span></a></p>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-cover is-repeated" style="min-height:300px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><div role="img" class="wp-block-cover__image-background wp-image-693 is-repeated" style="background-position:50% 50%;background-image:url(/wp-content/uploads/2023/01/evilTBlacked.png)"></div><div class="wp-block-cover__inner-container">
+<p class="has-text-align-center has-large-font-size"></p>
+</div></div>
+
+
+
+<hr class="wp-block-separator has-text-color has-medium-gray-color has-alpha-channel-opacity has-medium-gray-background-color has-background is-style-default"/>
+
+
+
+<p>The following document is one of the case studies we carried out in the 1<sup>st</sup> semester at the Advanced Cybersecurity MSc. (Polytechnic University of Bucharest). It describes how a rogue wireless access point (a.k.a. the &#8220;Evil Twin&#8221;) can be created to mimic a legitimate one, in order to trick users to connect to it.<br><br>The paper also contains a working proof-of-concept (<a rel="noreferrer noopener" href="https://www.malwarebytes.com/glossary/proof-of-concept" target="_blank">PoC</a>) that presents the main steps that I personally took while executing this attack (along with the needed hardware &amp; software). This is something you <strong>should try <em>only</em> at home</strong>, <strong>on your own equipment</strong> <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f605.png" alt="😅" class="wp-smiley" style="height: 1em; max-height: 1em;" />.<br><br>The goal was to gracefully steal <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color"><em>precious</em> WiFi passwords</mark> with an Evil Twin and a little bit of <a rel="noreferrer noopener" href="https://mstefanc.com/2022/03/20/social-engineering-playing-with-human-vulnerabilities/" data-type="URL" data-id="https://mstefanc.com/2022/03/20/social-engineering-playing-with-human-vulnerabilities/" target="_blank">Social Engineering</a>, instead of applying brute-force to guess them (which sometimes takes <a rel="noreferrer noopener" href="https://www.hivesystems.io/blog/are-your-passwords-in-the-green" data-type="URL" data-id="https://www.hivesystems.io/blog/are-your-passwords-in-the-green" target="_blank">a little bit too much time</a> <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f480.png" alt="💀" class="wp-smiley" style="height: 1em; max-height: 1em;" />).</p>
+
+
+
+<iframe loading="lazy" src="https://drive.google.com/file/d/1DnZtQ5aZOdCdB4zPA1zd6bKkvaym39ap/preview" allow="autoplay" width="1999" height="1200"></iframe>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>The PPT presentation of the paper:</p>
+
+
+
+<iframe loading="lazy" src="https://drive.google.com/file/d/1sXDuxfM9R8n4ueTwZfTBKzGjTVqDjDU9/preview" allow="autoplay" width="1500" height="800"></iframe>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>UNbreakable CTF 2022 (teams) Writeups</title>
 		<link>/2022/05/23/unbreakable-ctf-2022-teams-writeups/</link>
 		
