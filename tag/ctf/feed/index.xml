@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.1.1</generator>
+	<generator>https://wordpress.org/?v=6.3.1</generator>
 
 <image>
 	<url>/wp-content/uploads/2021/10/icon.png</url>
@@ -42,7 +42,7 @@
 
 					<description><![CDATA[This CTF contest phase took place between 20th &#8211; 22nd of May 2022. We competed against 70 teams (from both<p><a href="/2022/05/23/unbreakable-ctf-2022-teams-writeups/" class="more-link">Continue reading<span class="screen-reader-text">UNbreakable CTF 2022 (teams) Writeups</span></a></p>]]></description>
 										<content:encoded><![CDATA[
-<div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img decoding="async" loading="lazy" width="2400" height="1370" class="wp-block-cover__image-background wp-image-654" alt="" src="/wp-content/uploads/2022/05/birmingham-museums-trust-5EUh-tq31eA-unsplash-2-overlay-1.png" style="object-position:51% 32%" data-object-fit="cover" data-object-position="51% 32%"/><div class="wp-block-cover__inner-container">
+<div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img decoding="async" fetchpriority="high" width="2400" height="1370" class="wp-block-cover__image-background wp-image-654" alt="" src="/wp-content/uploads/2022/05/birmingham-museums-trust-5EUh-tq31eA-unsplash-2-overlay-1.png" style="object-position:51% 32%" data-object-fit="cover" data-object-position="51% 32%"/><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
 <p class="has-text-align-center has-small-font-size"><em>UNR 22</em> <br><strong>won.</strong></p>
 </div></div>
 
@@ -68,7 +68,7 @@
 
 
 
-<iframe loading="lazy" width="1999" height="1200" src="https://drive.google.com/file/d/1MI3-6aSzQSn3JcEc2v_-XRJhCF9gRwGQ/preview" allow="autoplay"></iframe>
+<iframe width="1999" height="1200" src="https://drive.google.com/file/d/1MI3-6aSzQSn3JcEc2v_-XRJhCF9gRwGQ/preview" allow="autoplay"></iframe>
 
 
 
@@ -76,7 +76,7 @@
 
 
 
-<div class="wp-block-image"><figure class="aligncenter size-full is-resized"><img decoding="async" loading="lazy" src="/wp-content/uploads/2022/05/Diploma_Spurge_teams_UNR22.png" alt="" class="wp-image-649" width="744" height="526"/></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-full is-resized"><img decoding="async" src="/wp-content/uploads/2022/05/Diploma_Spurge_teams_UNR22.png" alt="" class="wp-image-649" width="744" height="526"/></figure></div>
 ]]></content:encoded>
 					
 		
@@ -95,7 +95,7 @@
 
 					<description><![CDATA[This contest phase took place between 6th &#8211; 8th of May 2022 and had 165 active participants (from both Romania<p><a href="/2022/05/08/unbreakable-ctf-2022-individual-writeups/" class="more-link">Continue reading<span class="screen-reader-text">UNbreakable CTF 2022 (individual) Writeups</span></a></p>]]></description>
 										<content:encoded><![CDATA[
-<div class="wp-block-cover" style="min-height:463px"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img decoding="async" loading="lazy" width="1250" height="833" class="wp-block-cover__image-background wp-image-612" alt="" src="/wp-content/uploads/2022/05/CTF_img.png" style="object-position:46% 50%" data-object-fit="cover" data-object-position="46% 50%"/><div class="wp-block-cover__inner-container">
+<div class="wp-block-cover" style="min-height:463px"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img decoding="async" loading="lazy" width="1250" height="833" class="wp-block-cover__image-background wp-image-612" alt="" src="/wp-content/uploads/2022/05/CTF_img.png" style="object-position:46% 50%" data-object-fit="cover" data-object-position="46% 50%"/><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
 <p class="has-text-align-center has-small-font-size"><code><em>UNR 22</em></code></p>
 </div></div>
 

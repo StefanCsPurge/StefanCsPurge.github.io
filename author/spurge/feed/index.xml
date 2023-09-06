@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.1.1</generator>
+	<generator>https://wordpress.org/?v=6.3.1</generator>
 
 <image>
 	<url>/wp-content/uploads/2021/10/icon.png</url>
@@ -40,7 +40,7 @@
 
 					<description><![CDATA[The following document is one of the case studies we carried out in the 1st semester at the Advanced Cybersecurity<p><a href="/2023/01/17/executing-the-evil-twin-wireless-attack/" class="more-link">Continue reading<span class="screen-reader-text">Executing the Evil Twin Wireless Attack</span></a></p>]]></description>
 										<content:encoded><![CDATA[
-<div class="wp-block-cover is-repeated" style="min-height:300px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><div role="img" class="wp-block-cover__image-background wp-image-693 is-repeated" style="background-position:50% 50%;background-image:url(/wp-content/uploads/2023/01/evilTBlacked.png)"></div><div class="wp-block-cover__inner-container">
+<div class="wp-block-cover is-repeated" style="min-height:300px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><div role="img" class="wp-block-cover__image-background wp-image-693 is-repeated" style="background-position:50% 50%;background-image:url(/wp-content/uploads/2023/01/evilTBlacked.png)"></div><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
 <p class="has-text-align-center has-large-font-size"></p>
 </div></div>
 
@@ -54,7 +54,7 @@
 
 
 
-<iframe loading="lazy" src="https://drive.google.com/file/d/1DnZtQ5aZOdCdB4zPA1zd6bKkvaym39ap/preview" allow="autoplay" width="1999" height="1200"></iframe>
+<iframe src="https://drive.google.com/file/d/1DnZtQ5aZOdCdB4zPA1zd6bKkvaym39ap/preview" allow="autoplay" width="1999" height="1200"></iframe>
 
 
 
@@ -66,7 +66,7 @@
 
 
 
-<iframe loading="lazy" src="https://drive.google.com/file/d/1sXDuxfM9R8n4ueTwZfTBKzGjTVqDjDU9/preview" allow="autoplay" width="1500" height="800"></iframe>
+<iframe src="https://drive.google.com/file/d/1sXDuxfM9R8n4ueTwZfTBKzGjTVqDjDU9/preview" allow="autoplay" width="1500" height="800"></iframe>
 ]]></content:encoded>
 					
 		
@@ -87,7 +87,7 @@
 
 					<description><![CDATA[This CTF contest phase took place between 20th &#8211; 22nd of May 2022. We competed against 70 teams (from both<p><a href="/2022/05/23/unbreakable-ctf-2022-teams-writeups/" class="more-link">Continue reading<span class="screen-reader-text">UNbreakable CTF 2022 (teams) Writeups</span></a></p>]]></description>
 										<content:encoded><![CDATA[
-<div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img decoding="async" loading="lazy" width="2400" height="1370" class="wp-block-cover__image-background wp-image-654" alt="" src="/wp-content/uploads/2022/05/birmingham-museums-trust-5EUh-tq31eA-unsplash-2-overlay-1.png" style="object-position:51% 32%" data-object-fit="cover" data-object-position="51% 32%"/><div class="wp-block-cover__inner-container">
+<div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img decoding="async" fetchpriority="high" width="2400" height="1370" class="wp-block-cover__image-background wp-image-654" alt="" src="/wp-content/uploads/2022/05/birmingham-museums-trust-5EUh-tq31eA-unsplash-2-overlay-1.png" style="object-position:51% 32%" data-object-fit="cover" data-object-position="51% 32%"/><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
 <p class="has-text-align-center has-small-font-size"><em>UNR 22</em> <br><strong>won.</strong></p>
 </div></div>
 
@@ -140,7 +140,7 @@
 
 					<description><![CDATA[This contest phase took place between 6th &#8211; 8th of May 2022 and had 165 active participants (from both Romania<p><a href="/2022/05/08/unbreakable-ctf-2022-individual-writeups/" class="more-link">Continue reading<span class="screen-reader-text">UNbreakable CTF 2022 (individual) Writeups</span></a></p>]]></description>
 										<content:encoded><![CDATA[
-<div class="wp-block-cover" style="min-height:463px"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img decoding="async" loading="lazy" width="1250" height="833" class="wp-block-cover__image-background wp-image-612" alt="" src="/wp-content/uploads/2022/05/CTF_img.png" style="object-position:46% 50%" data-object-fit="cover" data-object-position="46% 50%"/><div class="wp-block-cover__inner-container">
+<div class="wp-block-cover" style="min-height:463px"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img decoding="async" loading="lazy" width="1250" height="833" class="wp-block-cover__image-background wp-image-612" alt="" src="/wp-content/uploads/2022/05/CTF_img.png" style="object-position:46% 50%" data-object-fit="cover" data-object-position="46% 50%"/><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
 <p class="has-text-align-center has-small-font-size"><code><em>UNR 22</em></code></p>
 </div></div>
 
@@ -189,7 +189,7 @@
 
 					<description><![CDATA[What is social engineering ? Well, given the plethora of news about scammers and people being easily fooled by them,<p><a href="/2022/03/20/social-engineering-playing-with-human-vulnerabilities/" class="more-link">Continue reading<span class="screen-reader-text">Social Engineering. Playing with human vulnerabilities :)</span></a></p>]]></description>
 										<content:encoded><![CDATA[
-<div class="wp-block-cover is-light"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img decoding="async" loading="lazy" width="1920" height="1280" class="wp-block-cover__image-background wp-image-355" alt="" src="/wp-content/uploads/2022/03/dan-farrell-fT49QnFucQ8-unsplash.jpg" style="object-position:50% 36%" data-object-fit="cover" data-object-position="50% 36%"/><div class="wp-block-cover__inner-container">
+<div class="wp-block-cover is-light"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img decoding="async" loading="lazy" width="1920" height="1280" class="wp-block-cover__image-background wp-image-355" alt="" src="/wp-content/uploads/2022/03/dan-farrell-fT49QnFucQ8-unsplash.jpg" style="object-position:50% 36%" data-object-fit="cover" data-object-position="50% 36%"/><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
 <p></p>
 
 
@@ -215,7 +215,7 @@
 
 
 
-<h3><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">What</mark> is social engineering ? </h3>
+<h3 class="wp-block-heading"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">What</mark> is social engineering ? </h3>
 
 
 
@@ -223,7 +223,7 @@
 
 
 
-<h3><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Types</mark> of social engineers</h3>
+<h3 class="wp-block-heading"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Types</mark> of social engineers</h3>
 
 
 
@@ -251,7 +251,7 @@
 
 
 
-<h3><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f575-fe0f-200d-2640-fe0f.png" alt="🕵️‍♀️" class="wp-smiley" style="height: 1em; max-height: 1em;" /></mark><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Information</mark> gathering</h3>
+<h3 class="wp-block-heading"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f575-fe0f-200d-2640-fe0f.png" alt="🕵️‍♀️" class="wp-smiley" style="height: 1em; max-height: 1em;" /></mark><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Information</mark> gathering</h3>
 
 
 
@@ -279,7 +279,7 @@
 
 
 
-<h3><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f4ac.png" alt="💬" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Elicitation</mark></h3>
+<h3 class="wp-block-heading"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f4ac.png" alt="💬" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Elicitation</mark></h3>
 
 
 
@@ -287,7 +287,7 @@
 
 
 
-<h4>Preloading</h4>
+<h4 class="wp-block-heading">Preloading</h4>
 
 
 
@@ -303,7 +303,7 @@
 
 
 
-<h5>A successful elicitor:</h5>
+<h5 class="wp-block-heading">A successful elicitor:</h5>
 
 
 
@@ -311,7 +311,7 @@
 
 
 
-<h3><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f3ad.png" alt="🎭" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Pretexting</mark>: How to Become Anyone</h3>
+<h3 class="wp-block-heading"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f3ad.png" alt="🎭" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Pretexting</mark>: How to Become Anyone</h3>
 
 
 
@@ -327,7 +327,7 @@
 
 
 
-<h3><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f9e0.png" alt="🧠" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Modes</mark> of thinking &amp; the senses</h3>
+<h3 class="wp-block-heading"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f9e0.png" alt="🧠" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Modes</mark> of thinking &amp; the senses</h3>
 
 
 
@@ -351,7 +351,7 @@
 
 
 
-<h3><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f972.png" alt="🥲" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Microexpressions</mark></h3>
+<h3 class="wp-block-heading"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f972.png" alt="🥲" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Microexpressions</mark></h3>
 
 
 
@@ -383,7 +383,7 @@
 
 
 
-<h3><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f5e3.png" alt="🗣" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Neurolinguistic</mark> Programming (NLP)</h3>
+<h3 class="wp-block-heading"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f5e3.png" alt="🗣" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Neurolinguistic</mark> Programming (NLP)</h3>
 
 
 
@@ -407,7 +407,7 @@
 
 
 
-<h3><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f937.png" alt="🤷" class="wp-smiley" style="height: 1em; max-height: 1em;" />Interview</mark> &amp; Interrogation</h3>
+<h3 class="wp-block-heading"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f937.png" alt="🤷" class="wp-smiley" style="height: 1em; max-height: 1em;" />Interview</mark> &amp; Interrogation</h3>
 
 
 
@@ -447,7 +447,7 @@
 
 
 
-<h3><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1fac2.png" alt="🫂" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Building</mark> Instant Rapport</h3>
+<h3 class="wp-block-heading"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1fac2.png" alt="🫂" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Building</mark> Instant Rapport</h3>
 
 
 
@@ -467,7 +467,7 @@
 
 
 
-<h3><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/26a0.png" alt="⚠" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">The Human</mark> Buffer Overflow</h3>
+<h3 class="wp-block-heading"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/26a0.png" alt="⚠" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">The Human</mark> Buffer Overflow</h3>
 
 
 
@@ -495,7 +495,7 @@
 
 
 
-<h3><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Influence</mark>: the power of persuasion</h3>
+<h3 class="wp-block-heading"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Influence</mark>: the power of persuasion</h3>
 
 
 
@@ -507,7 +507,7 @@
 
 
 
-<h4><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Reciprocation</mark></h4>
+<h4 class="wp-block-heading"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Reciprocation</mark></h4>
 
 
 
@@ -523,7 +523,7 @@
 
 
 
-<h4><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Scarcity</mark></h4>
+<h4 class="wp-block-heading"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Scarcity</mark></h4>
 
 
 
@@ -531,7 +531,7 @@
 
 
 
-<h4><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Authority</mark></h4>
+<h4 class="wp-block-heading"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Authority</mark></h4>
 
 
 
@@ -543,7 +543,7 @@
 
 
 
-<h4><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Commitment &amp; Consistency</mark></h4>
+<h4 class="wp-block-heading"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Commitment &amp; Consistency</mark></h4>
 
 
 
@@ -559,7 +559,7 @@
 
 
 
-<h4><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Liking</mark></h4>
+<h4 class="wp-block-heading"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Liking</mark></h4>
 
 
 
@@ -575,7 +575,7 @@
 
 
 
-<h4><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Consensus / Social Proof</mark></h4>
+<h4 class="wp-block-heading"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-yellow-color">Consensus / Social Proof</mark></h4>
 
 
 
@@ -595,7 +595,7 @@
 
 
 
-<h3><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f3de.png" alt="🏞" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Altering</mark> Reality: Framing</h3>
+<h3 class="wp-block-heading"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f3de.png" alt="🏞" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Altering</mark> Reality: Framing</h3>
 
 
 
@@ -635,7 +635,7 @@
 
 
 
-<h3><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f608.png" alt="😈" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Manipulation</mark>: Controlling Your Target</h3>
+<h3 class="wp-block-heading"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f608.png" alt="😈" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Manipulation</mark>: Controlling Your Target</h3>
 
 
 
@@ -659,7 +659,7 @@
 
 
 
-<h3><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f3c1.png" alt="🏁" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Concluding</mark> remarks</h3>
+<h3 class="wp-block-heading"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f3c1.png" alt="🏁" class="wp-smiley" style="height: 1em; max-height: 1em;" /><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blue-color">Concluding</mark> remarks</h3>
 
 
 
@@ -671,8 +671,8 @@
 
 
 
-<div class="is-layout-flex wp-container-3 wp-block-columns">
-<div class="is-layout-flow wp-block-column" style="flex-basis:33.33%">
+<div class="wp-block-columns is-layout-flex wp-container-7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
 <hr class="wp-block-separator"/>
 
 
@@ -682,7 +682,7 @@
 
 
 
-<div class="is-layout-flow wp-block-column" style="flex-basis:66.66%">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
 <iframe loading="lazy" title="TEDxSanAntonio - Brian Brushwood - Social Engineering - How to Scam Your Way into Anything" width="880" height="495" src="https://www.youtube.com/embed/yY-lMkeZVuY?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div></figure>
@@ -710,7 +710,7 @@
 
 					<description><![CDATA[26/02/2022: Ukraine&#8217;s president announced that anyone in the world can volunteer in the front line of defense of the country.<p><a href="/2022/02/28/vital-urban-warfare-knowledge/" class="more-link">Continue reading<span class="screen-reader-text">Vital urban warfare knowledge</span></a></p>]]></description>
 										<content:encoded><![CDATA[
-<div class="wp-block-cover" style="min-height:366px"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img decoding="async" loading="lazy" width="2400" height="1600" class="wp-block-cover__image-background wp-image-324" alt="combat" src="/wp-content/uploads/2022/02/daniel-stuben-VMXXvU1oKw8-unsplash.jpg" style="object-position:49% 49%" data-object-fit="cover" data-object-position="49% 49%"/><div class="wp-block-cover__inner-container">
+<div class="wp-block-cover" style="min-height:366px"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img decoding="async" loading="lazy" width="2400" height="1600" class="wp-block-cover__image-background wp-image-324" alt="combat" src="/wp-content/uploads/2022/02/daniel-stuben-VMXXvU1oKw8-unsplash.jpg" style="object-position:49% 49%" data-object-fit="cover" data-object-position="49% 49%"/><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
 <p class="has-text-align-center has-white-color has-text-color has-small-font-size" style="font-style:normal;font-weight:400"><strong><em>War is 90% information</em>. </strong></p>
 
 
@@ -728,7 +728,7 @@
 
 
 
-<h4>Some important notes beforehand</h4>
+<h4 class="wp-block-heading">Some important notes beforehand</h4>
 
 
 
@@ -736,7 +736,7 @@
 
 
 
-<h4>Until then, the tips &#8230;</h4>
+<h4 class="wp-block-heading">Until then, the tips &#8230;</h4>
 
 
 
@@ -744,7 +744,7 @@
 
 
 
-<h5>Also &#8230;</h5>
+<h5 class="wp-block-heading">Also &#8230;</h5>
 
 
 
@@ -752,7 +752,7 @@
 
 
 
-<div class="wp-block-cover" style="min-height:914px"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img decoding="async" loading="lazy" width="3584" height="4480" class="wp-block-cover__image-background wp-image-325" alt="" src="/wp-content/uploads/2022/02/alexander-jawfox-R_6kw7NUTLY-unsplash.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container">
+<div class="wp-block-cover" style="min-height:914px"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img decoding="async" loading="lazy" width="3584" height="4480" class="wp-block-cover__image-background wp-image-325" alt="" src="/wp-content/uploads/2022/02/alexander-jawfox-R_6kw7NUTLY-unsplash.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
 <p class="has-text-align-center" style="font-size:25px"><code>Good luck.</code></p>
 </div></div>
 
@@ -848,7 +848,7 @@
 
 					<description><![CDATA[In this world of ever evolving malware, its behavior and the methods used to fight against it become essential knowledge<p><a href="/2021/10/13/how-malware-misbehaves-how-to-punish-it/" class="more-link">Continue reading<span class="screen-reader-text">How malware misbehaves &#038; how to punish it</span></a></p>]]></description>
 										<content:encoded><![CDATA[
-<div class="wp-block-cover"><span aria-hidden="true" class="has-background-dim-60 wp-block-cover__gradient-background has-background-dim"></span><img decoding="async" loading="lazy" width="2560" height="1924" class="wp-block-cover__image-background wp-image-161" alt="" src="/wp-content/uploads/2021/10/michael-dziedzic-0W4XLGITrHg-unsplash-scaled.jpg" style="object-position:28% 20%" data-object-fit="cover" data-object-position="28% 20%" srcset="/wp-content/uploads/2021/10/michael-dziedzic-0W4XLGITrHg-unsplash-scaled.jpg 2560w, /wp-content/uploads/2021/10/michael-dziedzic-0W4XLGITrHg-unsplash-300x226.jpg 300w, /wp-content/uploads/2021/10/michael-dziedzic-0W4XLGITrHg-unsplash-1024x770.jpg 1024w, /wp-content/uploads/2021/10/michael-dziedzic-0W4XLGITrHg-unsplash-768x577.jpg 768w, /wp-content/uploads/2021/10/michael-dziedzic-0W4XLGITrHg-unsplash-1536x1155.jpg 1536w, /wp-content/uploads/2021/10/michael-dziedzic-0W4XLGITrHg-unsplash-2048x1540.jpg 2048w, /wp-content/uploads/2021/10/michael-dziedzic-0W4XLGITrHg-unsplash-440x330.jpg 440w, /wp-content/uploads/2021/10/michael-dziedzic-0W4XLGITrHg-unsplash-920x690.jpg 920w" sizes="(max-width: 2560px) 100vw, 2560px" /><div class="wp-block-cover__inner-container">
+<div class="wp-block-cover"><span aria-hidden="true" class="has-background-dim-60 wp-block-cover__gradient-background has-background-dim"></span><img decoding="async" loading="lazy" width="2560" height="1924" class="wp-block-cover__image-background wp-image-161" alt="" src="/wp-content/uploads/2021/10/michael-dziedzic-0W4XLGITrHg-unsplash-scaled.jpg" style="object-position:28% 20%" data-object-fit="cover" data-object-position="28% 20%" srcset="/wp-content/uploads/2021/10/michael-dziedzic-0W4XLGITrHg-unsplash-scaled.jpg 2560w, /wp-content/uploads/2021/10/michael-dziedzic-0W4XLGITrHg-unsplash-300x226.jpg 300w, /wp-content/uploads/2021/10/michael-dziedzic-0W4XLGITrHg-unsplash-1024x770.jpg 1024w, /wp-content/uploads/2021/10/michael-dziedzic-0W4XLGITrHg-unsplash-768x577.jpg 768w, /wp-content/uploads/2021/10/michael-dziedzic-0W4XLGITrHg-unsplash-1536x1155.jpg 1536w, /wp-content/uploads/2021/10/michael-dziedzic-0W4XLGITrHg-unsplash-2048x1540.jpg 2048w, /wp-content/uploads/2021/10/michael-dziedzic-0W4XLGITrHg-unsplash-440x330.jpg 440w, /wp-content/uploads/2021/10/michael-dziedzic-0W4XLGITrHg-unsplash-920x690.jpg 920w" sizes="(max-width: 2560px) 100vw, 2560px" /><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
 <p class="has-text-align-center has-red-color has-text-color has-normal-font-size"><code><strong>let's play a game of cat and mouse</strong></code></p>
 </div></div>
 
@@ -886,7 +886,7 @@
 
 
 
-<div class="wp-duotone-000000-ffffff-4 wp-block-image"><figure class="alignleft size-large is-resized"><img decoding="async" loading="lazy" src="/wp-content/uploads/2021/10/proactivity-edited.png" alt="" class="wp-image-166" width="1069" height="234" srcset="/wp-content/uploads/2021/10/proactivity-edited.png 1254w, /wp-content/uploads/2021/10/proactivity-edited-300x66.png 300w, /wp-content/uploads/2021/10/proactivity-edited-1024x225.png 1024w, /wp-content/uploads/2021/10/proactivity-edited-768x168.png 768w" sizes="(max-width: 1069px) 100vw, 1069px" /></figure></div>
+<div class="wp-block-image wp-duotone-000000-ffffff-11"><figure class="alignleft size-large is-resized"><img decoding="async" loading="lazy" src="/wp-content/uploads/2021/10/proactivity-edited.png" alt="" class="wp-image-166" width="1069" height="234" srcset="/wp-content/uploads/2021/10/proactivity-edited.png 1254w, /wp-content/uploads/2021/10/proactivity-edited-300x66.png 300w, /wp-content/uploads/2021/10/proactivity-edited-1024x225.png 1024w, /wp-content/uploads/2021/10/proactivity-edited-768x168.png 768w" sizes="(max-width: 1069px) 100vw, 1069px" /></figure></div>
 
 
 
@@ -894,14 +894,14 @@
 
 
 
-<div class="is-layout-flex wp-container-7 wp-block-columns">
-<div class="is-layout-flow wp-block-column">
+<div class="wp-block-columns is-layout-flex wp-container-14 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
 <ul><li>source detection and static detection are usually considered deprecated because they need a training set of already known malware =&gt; problems in detecting samples with novel behavior / might misclassify them</li><li>static analysis may be easily evaded through code obfuscation or by encrypting the executable file</li><li>emulation detection refers to the complete execution of the sample in a controlled environment (to monitor and record actions) =&gt; unsuitable for <span style="color:#149414" class="has-inline-color">real-time protection</span>.</li><li>some malware samples are able to detect they are executed in a controlled environment, so they alter their actions to appear harmless or manifest decoy behavior =&gt; emulation is susceptible to<span style="color:#149414" class="has-inline-color"> evasion</span></li><li>security solutions should be both <span style="color:#149414" class="has-inline-color">proactive</span> (prevent malware incidents) and <span style="color:#149414" class="has-inline-color">reactive</span> (detection for new malicious behavior can be added ASAP)</li></ul>
 </div>
 
 
 
-<div class="is-layout-flow wp-block-column" style="flex-basis:280px">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:280px">
 <figure class="wp-block-table aligncenter"><table><tbody><tr><td class="has-text-align-center" data-align="center">=&gt; focus on <span style="color:#149414" class="has-inline-color">dynamic detection</span> &#8211; i.e.  monitor the behavior / actions of processes dynamically, at run-time</td></tr></tbody></table></figure>
 </div>
 </div>
@@ -952,8 +952,8 @@
 
 
 
-<div class="is-layout-flex wp-container-10 wp-block-columns">
-<div class="is-layout-flow wp-block-column" style="flex-basis:66.66%">
+<div class="wp-block-columns is-layout-flex wp-container-17 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
 <ul><li>creating a<strong> copy</strong> of the original file &#8211; allows the malware to ensure persistence</li><li><strong>hiding</strong> a file &#8211; ensures the malicious file is less likely to be noticed by the user</li><li><strong>injecting code</strong> into another process &#8211; allows execution of code in the context of a process that is known to be clean (usually belonging to the OS)</li><li><strong>creating startup registry key </strong>&#8211; to ensure persistence after system restart</li><li><strong>disabling some critical OS functionalities</strong> (e.g., updates) or<strong> terminating critical processes</strong> &#8211; to keep the OS vulnerable</li></ul>
 
 
@@ -963,7 +963,7 @@
 
 
 
-<div class="is-layout-flow wp-block-column has-background" style="background-color:#1b0505;flex-basis:33.33%">
+<div class="wp-block-column has-background is-layout-flow wp-block-column-is-layout-flow" style="background-color:#1b0505;flex-basis:33.33%">
 <p></p>
 
 

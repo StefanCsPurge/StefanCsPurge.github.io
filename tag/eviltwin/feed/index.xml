@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.1.1</generator>
+	<generator>https://wordpress.org/?v=6.3.1</generator>
 
 <image>
 	<url>/wp-content/uploads/2021/10/icon.png</url>
@@ -40,7 +40,7 @@
 
 					<description><![CDATA[The following document is one of the case studies we carried out in the 1st semester at the Advanced Cybersecurity<p><a href="/2023/01/17/executing-the-evil-twin-wireless-attack/" class="more-link">Continue reading<span class="screen-reader-text">Executing the Evil Twin Wireless Attack</span></a></p>]]></description>
 										<content:encoded><![CDATA[
-<div class="wp-block-cover is-repeated" style="min-height:300px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><div role="img" class="wp-block-cover__image-background wp-image-693 is-repeated" style="background-position:50% 50%;background-image:url(/wp-content/uploads/2023/01/evilTBlacked.png)"></div><div class="wp-block-cover__inner-container">
+<div class="wp-block-cover is-repeated" style="min-height:300px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><div role="img" class="wp-block-cover__image-background wp-image-693 is-repeated" style="background-position:50% 50%;background-image:url(/wp-content/uploads/2023/01/evilTBlacked.png)"></div><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
 <p class="has-text-align-center has-large-font-size"></p>
 </div></div>
 
@@ -54,7 +54,7 @@
 
 
 
-<iframe loading="lazy" src="https://drive.google.com/file/d/1DnZtQ5aZOdCdB4zPA1zd6bKkvaym39ap/preview" allow="autoplay" width="1999" height="1200"></iframe>
+<iframe src="https://drive.google.com/file/d/1DnZtQ5aZOdCdB4zPA1zd6bKkvaym39ap/preview" allow="autoplay" width="1999" height="1200"></iframe>
 
 
 
@@ -66,7 +66,7 @@
 
 
 
-<iframe loading="lazy" src="https://drive.google.com/file/d/1sXDuxfM9R8n4ueTwZfTBKzGjTVqDjDU9/preview" allow="autoplay" width="1500" height="800"></iframe>
+<iframe src="https://drive.google.com/file/d/1sXDuxfM9R8n4ueTwZfTBKzGjTVqDjDU9/preview" allow="autoplay" width="1500" height="800"></iframe>
 ]]></content:encoded>
 					
 		
