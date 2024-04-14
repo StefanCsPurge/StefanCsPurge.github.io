@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.3.1</generator>
+	<generator>https://wordpress.org/?v=6.5.2</generator>
 
 <image>
 	<url>/wp-content/uploads/2021/10/icon.png</url>
@@ -40,7 +40,7 @@
 
 					<description><![CDATA[26/02/2022: Ukraine&#8217;s president announced that anyone in the world can volunteer in the front line of defense of the country.<p><a href="/2022/02/28/vital-urban-warfare-knowledge/" class="more-link">Continue reading<span class="screen-reader-text">Vital urban warfare knowledge</span></a></p>]]></description>
 										<content:encoded><![CDATA[
-<div class="wp-block-cover" style="min-height:366px"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img decoding="async" fetchpriority="high" width="2400" height="1600" class="wp-block-cover__image-background wp-image-324" alt="combat" src="/wp-content/uploads/2022/02/daniel-stuben-VMXXvU1oKw8-unsplash.jpg" style="object-position:49% 49%" data-object-fit="cover" data-object-position="49% 49%"/><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
+<div class="wp-block-cover" style="min-height:366px;aspect-ratio:unset;"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img fetchpriority="high" decoding="async" width="2400" height="1600" class="wp-block-cover__image-background wp-image-324" alt="combat" src="/wp-content/uploads/2022/02/daniel-stuben-VMXXvU1oKw8-unsplash.jpg" style="object-position:49% 49%" data-object-fit="cover" data-object-position="49% 49%"/><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
 <p class="has-text-align-center has-white-color has-text-color has-small-font-size" style="font-style:normal;font-weight:400"><strong><em>War is 90% information</em>. </strong></p>
 
 
@@ -82,7 +82,7 @@
 
 
 
-<div class="wp-block-cover" style="min-height:914px"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img decoding="async" width="3584" height="4480" class="wp-block-cover__image-background wp-image-325" alt="" src="/wp-content/uploads/2022/02/alexander-jawfox-R_6kw7NUTLY-unsplash.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
+<div class="wp-block-cover" style="min-height:914px;aspect-ratio:unset;"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img decoding="async" width="3584" height="4480" class="wp-block-cover__image-background wp-image-325" alt="" src="/wp-content/uploads/2022/02/alexander-jawfox-R_6kw7NUTLY-unsplash.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
 <p class="has-text-align-center" style="font-size:25px"><code>Good luck.</code></p>
 </div></div>
 

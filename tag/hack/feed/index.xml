@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.3.1</generator>
+	<generator>https://wordpress.org/?v=6.5.2</generator>
 
 <image>
 	<url>/wp-content/uploads/2021/10/icon.png</url>
@@ -61,7 +61,7 @@
 
 
 
-<figure class="wp-block-image alignwide size-large"><img decoding="async" fetchpriority="high" width="791" height="1024" src="/wp-content/uploads/2021/10/completeDescriptionSQLInj_page-0001-791x1024.jpg" alt="" class="wp-image-151" srcset="/wp-content/uploads/2021/10/completeDescriptionSQLInj_page-0001-791x1024.jpg 791w, /wp-content/uploads/2021/10/completeDescriptionSQLInj_page-0001-232x300.jpg 232w, /wp-content/uploads/2021/10/completeDescriptionSQLInj_page-0001-768x994.jpg 768w, /wp-content/uploads/2021/10/completeDescriptionSQLInj_page-0001-1187x1536.jpg 1187w, /wp-content/uploads/2021/10/completeDescriptionSQLInj_page-0001.jpg 1275w" sizes="(max-width: 791px) 100vw, 791px" /></figure>
+<figure class="wp-block-image alignwide size-large"><img fetchpriority="high" decoding="async" width="791" height="1024" src="/wp-content/uploads/2021/10/completeDescriptionSQLInj_page-0001-791x1024.jpg" alt="" class="wp-image-151" srcset="/wp-content/uploads/2021/10/completeDescriptionSQLInj_page-0001-791x1024.jpg 791w, /wp-content/uploads/2021/10/completeDescriptionSQLInj_page-0001-232x300.jpg 232w, /wp-content/uploads/2021/10/completeDescriptionSQLInj_page-0001-768x994.jpg 768w, /wp-content/uploads/2021/10/completeDescriptionSQLInj_page-0001-1187x1536.jpg 1187w, /wp-content/uploads/2021/10/completeDescriptionSQLInj_page-0001.jpg 1275w" sizes="(max-width: 791px) 100vw, 791px" /></figure>
 
 
 
@@ -73,7 +73,7 @@
 
 
 
-<figure class="wp-block-image alignwide size-large"><img decoding="async" loading="lazy" width="1024" height="678" src="/wp-content/uploads/2021/10/ALL_DB_schema-1024x678.png" alt="" class="wp-image-147" srcset="/wp-content/uploads/2021/10/ALL_DB_schema-1024x678.png 1024w, /wp-content/uploads/2021/10/ALL_DB_schema-300x199.png 300w, /wp-content/uploads/2021/10/ALL_DB_schema-768x508.png 768w, /wp-content/uploads/2021/10/ALL_DB_schema.png 1511w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>DB schema</figcaption></figure>
+<figure class="wp-block-image alignwide size-large"><img loading="lazy" decoding="async" width="1024" height="678" src="/wp-content/uploads/2021/10/ALL_DB_schema-1024x678.png" alt="" class="wp-image-147" srcset="/wp-content/uploads/2021/10/ALL_DB_schema-1024x678.png 1024w, /wp-content/uploads/2021/10/ALL_DB_schema-300x199.png 300w, /wp-content/uploads/2021/10/ALL_DB_schema-768x508.png 768w, /wp-content/uploads/2021/10/ALL_DB_schema.png 1511w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>DB schema</figcaption></figure>
 
 
 
