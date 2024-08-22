@@ -10,12 +10,12 @@
 	Comments on: My journey (summarized)	</title>
 	<atom:link href="/sample-page/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
-	<description>Technology &#38; Information Security Enthusiast</description>
+	<description>Infosec engineer navigating the digital &#38; analog realms</description>
 	<lastBuildDate>Wed, 06 Sep 2023 10:40:36 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.5.2</generator>
+	<generator>https://wordpress.org/?v=6.6.1</generator>
 </channel>
 </rss>
